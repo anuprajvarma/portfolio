@@ -1,0 +1,98 @@
+.profileImage {
+  display: block;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.myname {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  width: 180px;
+  font-weight: bold;
+  color: #d9d9d9;
+  margin-top: 15px;
+  font-family: sans-serif;
+}
+
+.skillSec {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skillDiv1 {
+  height: 20px;
+  width: 70px;
+  font-weight: bold;
+  padding: 1px;
+  padding-left: 6px;
+  border-radius: 3px;
+  margin: 6px 10px 10px 10px;
+  background-color: #d9d9d9;
+}
+.skillDiv2 {
+  height: 20px;
+  width: 110px;
+  padding: 1px;
+  font-weight: bold;
+  padding-left: 6px;
+  border-radius: 3px;
+  margin: 6px 10px 10px 5px;
+  background-color: #d9d9d9;
+}
+.skillDiv3 {
+  height: 20px;
+  width: 140px;
+  font-weight: bold;
+  padding: 1px;
+  padding-left: 6px;
+  border-radius: 3px;
+  margin: 6px 10px 10px 5px;
+  background-color: #d9d9d9;
+}
+.skillDiv4 {
+  height: 20px;
+  width: 110px;
+  font-weight: bold;
+  padding: 1px;
+  padding-left: 6px;
+  border-radius: 3px;
+  margin: 6px 10px 10px 5px;
+  background-color: #d9d9d9;
+}
+
+.skillDiv5 {
+  height: 20px;
+  width: 120px;
+  font-weight: bold;
+  padding: 1px;
+  padding-left: 6px;
+  border-radius: 3px;
+  margin: 6px 10px 10px 5px;
+  background-color: #d9d9d9;
+}
+
+.linkeDiv {
+  width: 40%;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}
+
+.linkText {
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: bold;
+}
