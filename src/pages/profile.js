@@ -6,7 +6,7 @@ export default function profile() {
     <>
       <Image
         className={Style.profileImage}
-        src={"/profilePhotos.jpeg"}
+        src={"/profilePhoto2.png"}
         width="130"
         height="130"
         alt="ProfileImage"

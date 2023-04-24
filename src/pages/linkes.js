@@ -7,7 +7,7 @@ import Style from "../styles/main.module.css";
 export default function links() {
   const router = useRouter();
   return (
-    <>
+    <div className={Style.mainDiv}>
       <div className={Style.linkeDiv}>
         <Link href="https://anuprajvarma.vercel.app/" target="_blank">
           <div className={Style.linkText1}>Personal Portfolio</div>
@@ -23,6 +23,7 @@ export default function links() {
       </div>
       <div className={Style.linkeDiv}>
         <Link href="https://github.com/anuprajvarma" target="_blank">
+          <FaGithubAlt className={Style.githubIcon} />
           <div className={Style.linkText3}>Follow me on GitHub</div>
         </Link>
       </div>
@@ -38,10 +39,9 @@ export default function links() {
           <div className={Style.linkText5}>Instagram</div>
         </Link>
       </div>
-      <BsChatRightTextFill
-        className={Style.icon}
-        onClick={() => router.push("mailto:anupraj1854@gmail.com")}
-      />
-    </>
+      <Link href="mailto:anupraj1854@gmail.com" target="_blank">
+        <BsChatRightTextFill className={Style.icon} />
+      </Link>
+    </div>
   );
 }
