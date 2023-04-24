@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Style from "../styles/main.module.css";
 
-export default function profile() {
+export default function Profile() {
   return (
     <>
       <Image

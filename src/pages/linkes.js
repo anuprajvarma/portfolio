@@ -1,11 +1,9 @@
 import Link from "next/link";
 import { FaGithubAlt } from "react-icons/fa";
 import { BsChatRightTextFill } from "react-icons/bs";
-import { useRouter } from "next/router";
 import Style from "../styles/main.module.css";
 
-export default function links() {
-  const router = useRouter();
+export default function Links() {
   return (
     <div className={Style.mainDiv}>
       <div className={Style.linkeDiv}>

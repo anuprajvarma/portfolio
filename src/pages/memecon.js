@@ -2,7 +2,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import Style from "../styles/main.module.css";
-export default function memePage() {
+
+export default function Memecon() {
   const [value, setValue] = useState(1);
 
   useEffect(() => {
@@ -19,7 +20,12 @@ export default function memePage() {
         />
       </div>
       <div className={Style.memeImage}>
-        <Image src={`/meme${value}.jpg`} width="250" height="150" />
+        <Image
+          src={`/meme${value}.jpg`}
+          width="250"
+          height="150"
+          alt="memeImage"
+        />
       </div>
       <div>
         <MdArrowForwardIos

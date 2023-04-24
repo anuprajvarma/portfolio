@@ -1,5 +1,5 @@
 import Head from "next/head";
-import MemePage from "./memePage";
+import MemeCon from "./memecon";
 import Profile from "./profile";
 import Links from "./linkes";
 
@@ -10,7 +10,7 @@ export default function Home() {
         <title>Anupraj Verma</title>
       </Head>
       <Profile />
-      <MemePage />
+      <MemeCon />
       <Links />
     </>
   );
