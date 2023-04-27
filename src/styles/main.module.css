@@ -20,16 +20,15 @@
 
 .skillSec {
   display: flex;
-  flex-direction: row;
-  width: 500px;
-  height: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
+  /* flex-direction: row; */
+  /* width: 500px;
+  height: 30px; */
 }
 
 .skillDiv1 {
   height: 20px;
-  width: 70px;
+  width: 60px;
   font-weight: bold;
   padding: 1px;
   padding-left: 6px;
@@ -39,7 +38,7 @@
 }
 .skillDiv2 {
   height: 20px;
-  width: 110px;
+  width: 90px;
   padding: 1px;
   font-weight: bold;
   padding-left: 6px;
@@ -49,7 +48,7 @@
 }
 .skillDiv3 {
   height: 20px;
-  width: 140px;
+  width: 100px;
   font-weight: bold;
   padding: 1px;
   padding-left: 6px;
@@ -59,7 +58,7 @@
 }
 .skillDiv4 {
   height: 20px;
-  width: 110px;
+  width: 80px;
   font-weight: bold;
   padding: 1px;
   padding-left: 6px;
@@ -70,7 +69,7 @@
 
 .skillDiv5 {
   height: 20px;
-  width: 120px;
+  width: 85px;
   font-weight: bold;
   padding: 1px;
   padding-left: 6px;
