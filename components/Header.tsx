@@ -8,32 +8,33 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="text-white p-4 flex justify-between items-center w-6/12 m-auto">
-      <h1 className="text-xl font-bold cursor-pointer">Anupraj</h1>
-      <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
-      <nav
-        className={`absolute lg:static top-16 left-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent p-4 lg:p-0 ${
-          isOpen ? "block" : "hidden"
-        } lg:block`}
-      >
-        <ul className="flex flex-col lg:flex-row gap-4">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/contact">Blog</Link>
-          </li>
-          <li>
-            <Link href="/contact">Resume</Link>
-          </li>
-          <button className="w-[30px] rounded-sm bg-grey"></button>
-        </ul>
-      </nav>
+    <header className="px-4">
+      <div className="w-6/12 m-auto flex justify-between items-center px-2">
+        <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+        <nav
+          className={`absolute lg:static top-16 left-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent lg:p-0 ${
+            isOpen ? "block" : "hidden"
+          } lg:block`}
+        >
+          <ul className="flex flex-col text-2xl lg:flex-row gap-4">
+            <li className="hover:bg-grey rounded-md p-2">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="hover:bg-grey rounded-md p-2">
+              <Link href="/about">About</Link>
+            </li>
+            <li className="hover:bg-grey rounded-md p-2">
+              <Link href="/blog">Blog</Link>
+            </li>
+            <li className="hover:bg-grey rounded-md p-2">
+              <Link href="/resume">Resume</Link>
+            </li>
+          </ul>
+        </nav>
+        <button className="w-[20px] h-[20px] rounded-full bg-grey cursor-pointer"></button>
+      </div>
     </header>
   );
 };

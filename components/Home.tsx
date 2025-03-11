@@ -6,10 +6,11 @@ import {
   PiYoutubeLogoLight,
 } from "react-icons/pi";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import Link from "next/link";
 
 const Home = () => {
   return (
-    <div className="p-4 py-10 gap-12 flex flex-col w-full">
+    <div className="p-4 py-6 gap-12 flex flex-col w-full">
       <div className="flex justify-between w-full">
         <div className="w-9/12 flex flex-col gap-3">
           <h1 className="text-4xl font-bold">Anupraj Varma</h1>
@@ -20,10 +21,21 @@ const Home = () => {
               and open source.
             </p>
             <div className="flex gap-6 cursor-pointer">
-              <PiLinkedinLogo size={25} />
-              <PiGithubLogoThin size={25} />
-              <PiTwitterLogoLight size={25} />
-              <PiYoutubeLogoLight size={25} />
+              <Link
+                href="https://www.linkedin.com/in/anuprajvarma/"
+                target="_blank"
+              >
+                <PiLinkedinLogo size={25} />
+              </Link>
+              <Link href="https://github.com/anuprajvarma" target="_blank">
+                <PiGithubLogoThin size={25} />
+              </Link>
+              <Link href="https://x.com/Anupraj_varma" target="_blank">
+                <PiTwitterLogoLight size={25} />
+              </Link>
+              <Link href="https://www.youtube.com/@MarkVerma" target="_blank">
+                <PiYoutubeLogoLight size={25} />
+              </Link>
             </div>
           </div>
         </div>
@@ -77,10 +89,29 @@ const Home = () => {
               August 2014....
             </p>
           </div>
-          <div className="py-8 cursor-pointer w-full flex items-center flex-col">
-            <div className="w-4/12 flex flex-col justify-center items-center text-center">
-              <h1 className="text-2xl font-medium">Read More</h1>
-              <MdKeyboardDoubleArrowDown size={30} />
+          <div className="relative w-full flex justify-center">
+            <div className="py-6 border-b w-full border-grey">
+              <div className="flex justify-between">
+                <h2 className="text-xl font-medium">
+                  7 Principles of Rich Web Applications
+                </h2>
+                <p>10 Mar, 2025</p>
+              </div>
+              <p className="font-medium">
+                This is a writeup based on a presentation I gave at BrazilJS in
+                August 2014....
+              </p>
+            </div>
+            <div className="fixed bottom-0 cursor-pointer w-6/12 flex items-center flex-col">
+              <Link
+                href="/blog"
+                className="w-4/12 flex flex-col justify-center items-center text-center"
+              >
+                <MdKeyboardDoubleArrowDown
+                  size={60}
+                  className="my-6 cursor-pointer animate-bounce"
+                />
+              </Link>
             </div>
           </div>
         </div>
