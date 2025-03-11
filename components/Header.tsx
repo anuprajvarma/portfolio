@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className="text-white p-4 flex justify-between items-center">
-      <h1 className="text-xl font-bold">My App</h1>
+      <h1 className="text-xl font-bold">Anupraj</h1>
       <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
