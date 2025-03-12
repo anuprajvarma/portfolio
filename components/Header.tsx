@@ -3,9 +3,15 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { PiSunDim, PiMoon } from "react-icons/pi";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+
+  function toggleDarkMode() {
+    setIsDark(!isDark);
+  }
 
   return (
     <header className="px-4">
@@ -14,7 +20,7 @@ const Header = () => {
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
         <nav
-          className={`absolute lg:static top-16 left-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent lg:p-0 ${
+          className={`absolute cursor-pointer lg:static top-16 left-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent lg:p-0 ${
             isOpen ? "block" : "hidden"
           } lg:block`}
         >
@@ -33,7 +39,17 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <button className="w-[20px] h-[20px] rounded-full bg-grey cursor-pointer"></button>
+        {isDark ? (
+          <PiMoon
+            className="cursor-pointer size-10 hover:bg-grey rounded-md p-2"
+            onClick={toggleDarkMode}
+          />
+        ) : (
+          <PiSunDim
+            className="cursor-pointer size-10 hover:bg-grey rounded-md p-2"
+            onClick={toggleDarkMode}
+          />
+        )}
       </div>
     </header>
   );

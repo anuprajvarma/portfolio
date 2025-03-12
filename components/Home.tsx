@@ -53,7 +53,7 @@ const Home = () => {
       <div>
         <h1 className="text-3xl font-bold">Featured Projects</h1>
         <div className="flex flex-col cursor-pointer">
-          <div className="py-6 border-b border-grey">
+          <div className="py-4 border-b border-grey hover:bg-grey rounded-md">
             <div className="flex justify-between">
               <h2 className="text-xl font-medium">
                 7 Principles of Rich Web Applications
@@ -65,7 +65,7 @@ const Home = () => {
               August 2014....
             </p>
           </div>
-          <div className="py-6 border-b border-grey">
+          <div className="py-4 border-b border-grey hover:bg-grey rounded-md">
             <div className="flex justify-between">
               <h2 className="text-xl font-medium">
                 7 Principles of Rich Web Applications
@@ -77,7 +77,19 @@ const Home = () => {
               August 2014....
             </p>
           </div>
-          <div className="py-6 border-b border-grey">
+          <div className="py-4 border-b border-grey hover:bg-grey rounded-md">
+            <div className="flex justify-between">
+              <h2 className="text-xl font-medium">
+                7 Principles of Rich Web Applications
+              </h2>
+              <p>10 Mar, 2025</p>
+            </div>
+            <p className="font-medium">
+              This is a writeup based on a presentation I gave at BrazilJS in
+              August 2014....
+            </p>
+          </div>
+          <div className="py-4 border-b border-grey hover:bg-grey rounded-md">
             <div className="flex justify-between">
               <h2 className="text-xl font-medium">
                 7 Principles of Rich Web Applications
@@ -90,7 +102,7 @@ const Home = () => {
             </p>
           </div>
           <div className="relative w-full flex justify-center">
-            <div className="py-6 border-b w-full border-grey">
+            <div className="py-4 border-b w-full border-grey rounded-md hover:bg-grey ">
               <div className="flex justify-between">
                 <h2 className="text-xl font-medium">
                   7 Principles of Rich Web Applications
