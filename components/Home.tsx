@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <div className="p-4 py-6 gap-12 flex flex-col w-full">
+    <div className="p-4 py-6 w-full">
       <div className="flex justify-between w-full">
         <div className="w-9/12 flex flex-col gap-3">
           <h1 className="text-4xl font-bold">Anupraj Varma</h1>
