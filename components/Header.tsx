@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header className="px-4">
-      <div className="w-6/12 m-auto flex justify-between items-center px-2">
+      <div className="w-[40rem] m-auto flex justify-between items-center px-2">
         <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
