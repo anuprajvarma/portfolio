@@ -97,13 +97,13 @@ export default function About() {
           <div className="flex flex-col gap-12 w-full">
             <div className="bg-grey w-full flex gap-3">
               <Image
-                className="h-[8rem] w-[30rem] cursor-pointer"
-                src="/portfolio_pic.png"
+                className="h-[8rem] w-[13rem] cursor-pointer"
+                src="/synCode.png"
                 alt="Portfolio pic"
                 width={50}
                 height={50}
               />
-              <div className="py-2 px-4 flex flex-col gap-2">
+              <div className="py-2 px-4 flex flex-col gap-2 rounded-md">
                 <p className="text-xl">Sync Code</p>
                 <p className="line-clamp-2 text-sm">
                   There are many variations of passages of Lorem Ipsum form, by
@@ -128,16 +128,16 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="bg-grey w-full flex gap-3">
+            <div className="bg-grey w-full flex gap-3 rounded-md">
               <Image
-                className="h-[8rem] w-[30rem] cursor-pointer"
-                src="/portfolio_pic.png"
+                className="h-[8rem] w-[13rem] cursor-pointer"
+                src="/searchPage.png"
                 alt="Portfolio pic"
                 width={50}
                 height={50}
               />
               <div className="py-2 px-4 flex flex-col gap-2">
-                <p className="text-xl">Sync Code</p>
+                <p className="text-xl">Movie Hub</p>
                 <p className="line-clamp-2 text-sm">
                   There are many variations of passages of Lorem Ipsum form, by
                   injected humour, or randomised words which There are many
@@ -146,15 +146,12 @@ export default function About() {
                 <div className="relative">
                   <div className="flex absolute right-0 w-[67px] gap-4">
                     <Link
-                      href="https://github.com/anuprajvarma/Sync_Code"
+                      href="https://github.com/anuprajvarma/moviehub"
                       target="_blank"
                     >
                       <PiGithubLogoThin size={25} />
                     </Link>
-                    <Link
-                      href="https://sync-code1.herokuapp.com/"
-                      target="_blank"
-                    >
+                    <Link href="https://moviehub1.vercel.app/" target="_blank">
                       <CiLink size={25} />
                     </Link>
                   </div>
