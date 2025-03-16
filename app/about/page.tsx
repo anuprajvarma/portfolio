@@ -52,35 +52,35 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="h-[300px] py-2">
-              <div className="flex flex-col h-[150] items-center">
+            <div className="h-[300px] relative">
+              <div className="flex flex-col h-[162] items-center pt-3">
                 <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
                 <div className="w-[2px] h-full bg-white"></div>
               </div>
-              <div className="h-[150]">
+              <div className="h-[138] absolute bottom-0">
                 <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
               </div>
             </div>
-            <div className="w-8/12 h-[300px]">
-              <div className="h-[150px] flex flex-col gap-2 pl-4">
+            <div className="w-8/12 h-[300px] flex flex-col gap-2 pl-8">
+              <div className="h-[150px] flex flex-col gap-2">
                 <p className="text-2xl font-medium">Software Developer</p>
-                <p className="text-sm">
+                <p className="text-xs">
                   There are many variations of passages of Lorem Ipsum
                   available, but the majority have suffered alteration in some
                 </p>
-                <ul className="list-disc list-inside text-sm">
+                <ul className="list-disc list-inside text-xs">
                   <li>There are many variations of passages of Lorem Ipsum </li>
                   <li>There are many variations of passages of Lorem Ipsum </li>
                   <li>There are many variations of passages of Lorem Ipsum </li>
                 </ul>
               </div>
-              <div className="h-[150px] flex flex-col gap-2 pl-4">
+              <div className="h-[150px] flex flex-col gap-2">
                 <p className="text-2xl font-medium">Frontend Developer</p>
-                <p className="text-sm">
+                <p className="text-xs">
                   There are many variations of passages of Lorem Ipsum
                   available, but the majority have suffered alteration in some
                 </p>
-                <ul className="list-disc list-inside text-sm">
+                <ul className="list-disc list-inside text-xs">
                   <li>There are many variations of passages of Lorem Ipsum </li>
                   <li>There are many variations of passages of Lorem Ipsum </li>
                   <li>There are many variations of passages of Lorem Ipsum </li>
