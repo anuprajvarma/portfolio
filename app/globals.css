@@ -2,6 +2,7 @@
 
 @theme {
   --color-grey: #111111;
+  --color-grey-light: #313131;
 }
 
 :root {
