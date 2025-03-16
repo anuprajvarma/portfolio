@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { PiGithubLogoThin } from "react-icons/pi";
+import Link from "next/link";
+import { CiLink } from "react-icons/ci";
 
 export default function About() {
   return (
@@ -89,45 +92,73 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="p-4 py-6 flex flex-col gap-4">
+        <div className="p-4 w-full py-6 flex flex-col gap-4">
           <p className="text-3xl font-medium">Projects</p>
-          <div className="flex flex-row gap-16">
-            <div className="bg-grey flex gap-3">
-              <div className="">
-                <Image
-                  className=""
-                  src="/portfolio_pic.png"
-                  alt="Portfolio pic"
-                  width={50}
-                  height={50}
-                  layout="responsive"
-                />
-              </div>
-              <div className="p-2">
-                <p>Sync Code</p>
-                <p className="text-xs line-clamp-2">
+          <div className="flex flex-col gap-12 w-full">
+            <div className="bg-grey w-full flex gap-3">
+              <Image
+                className="h-[8rem] w-[30rem] cursor-pointer"
+                src="/portfolio_pic.png"
+                alt="Portfolio pic"
+                width={50}
+                height={50}
+              />
+              <div className="py-2 px-4 flex flex-col gap-2">
+                <p className="text-xl">Sync Code</p>
+                <p className="line-clamp-2 text-sm">
                   There are many variations of passages of Lorem Ipsum form, by
-                  injected humour, or randomised words which{" "}
+                  injected humour, or randomised words which There are many
+                  variations of passages of Lorem.{" "}
                 </p>
+                <div className="relative">
+                  <div className="flex absolute right-0 w-[67px] gap-4">
+                    <Link
+                      href="https://github.com/anuprajvarma/Sync_Code"
+                      target="_blank"
+                    >
+                      <PiGithubLogoThin size={25} />
+                    </Link>
+                    <Link
+                      href="https://sync-code1.herokuapp.com/"
+                      target="_blank"
+                    >
+                      <CiLink size={25} />
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="bg-grey flex gap-3">
-              <div className="">
-                <Image
-                  className=""
-                  src="/portfolio_pic.png"
-                  alt="Portfolio pic"
-                  width={50}
-                  height={50}
-                  layout="responsive"
-                />
-              </div>
-              <div className="p-2">
-                <p>Sync Code</p>
-                <p className="line-clamp-2 text-xs">
+            <div className="bg-grey w-full flex gap-3">
+              <Image
+                className="h-[8rem] w-[30rem] cursor-pointer"
+                src="/portfolio_pic.png"
+                alt="Portfolio pic"
+                width={50}
+                height={50}
+              />
+              <div className="py-2 px-4 flex flex-col gap-2">
+                <p className="text-xl">Sync Code</p>
+                <p className="line-clamp-2 text-sm">
                   There are many variations of passages of Lorem Ipsum form, by
-                  injected humour, or randomised words which...{" "}
+                  injected humour, or randomised words which There are many
+                  variations of passages of Lorem.{" "}
                 </p>
+                <div className="relative">
+                  <div className="flex absolute right-0 w-[67px] gap-4">
+                    <Link
+                      href="https://github.com/anuprajvarma/Sync_Code"
+                      target="_blank"
+                    >
+                      <PiGithubLogoThin size={25} />
+                    </Link>
+                    <Link
+                      href="https://sync-code1.herokuapp.com/"
+                      target="_blank"
+                    >
+                      <CiLink size={25} />
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
