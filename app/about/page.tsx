@@ -52,7 +52,15 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="">d</div>
+            <div className="h-[300px] py-2">
+              <div className="flex flex-col h-[150] items-center">
+                <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
+                <div className="w-[2px] h-full bg-white"></div>
+              </div>
+              <div className="h-[150]">
+                <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
+              </div>
+            </div>
             <div className="w-8/12 h-[300px]">
               <div className="h-[150px] flex flex-col gap-2 pl-4">
                 <p className="text-2xl font-medium">Software Developer</p>
