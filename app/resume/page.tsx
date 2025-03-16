@@ -7,7 +7,7 @@ const Resume = () => {
         <iframe
           src="https://drive.google.com/file/d/18rfJCbbjdzuMDO3Sj33Z9sm8fkgUW74U/preview"
           allow="autoplay"
-          className="w-full h-[45rem]"
+          className="w-full h-[45rem] p-4"
         ></iframe>
       </div>
     </div>
