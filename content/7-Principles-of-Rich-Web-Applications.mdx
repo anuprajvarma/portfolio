@@ -1,0 +1,82 @@
+---
+title: "7 Principles of Rich Web Applications"
+description: " This is a writeup based on a presentation I gave at BrazilJS in
+  August 2014"
+date: "2025-03-17"
+---
+
+# JavaScript and UX: 7 Actionable Principles
+
+This is a writeup based on a presentation I gave at **BrazilJS in August 2014**. It builds on some of the ideas I've been blogging about recently, mostly related to **UX and performance**.
+
+I want to introduce **7 actionable principles** for websites that use JavaScript to control their UI. These principles stem from my experience as a **web developer** and a long-time **user of the web**.
+
+## JavaScript's Expanding Role
+
+JavaScript has become an **indispensable tool** for frontend developers. It is now expanding into other areas like **servers and microcontrollers**. Many prestigious universities also use it to introduce **computer science concepts**.
+
+Yet, many questions remain about JavaScript’s precise role and usage on the web—even for framework and library authors:
+
+- Should JavaScript replace browser functions like **history, navigation, and page rendering**?
+- Is the **backend dying**? Should I render **HTML at all**?
+- Are **Single Page Applications (SPAs)** the future?
+- Should JavaScript **augment pages** for websites but render pages in web apps?
+- Should techniques like **PJAX or TurboLinks** be used?
+- What’s the distinction between a **website and a web application**? Should there be one?
+
+This writeup aims to answer these questions by examining JavaScript usage **through the lens of UX**. I focus on minimizing the time it takes for users to access the data they need—starting from networking fundamentals to **predicting the future**.
+
+---
+
+## 7 Principles for JavaScript UI Control
+
+1. **Pre-rendered pages are not optional**
+2. **Act immediately on user input**
+3. **React to data changes**
+4. **Control the data exchange with the server**
+5. **Don't break history, enhance it**
+6. **Push code updates**
+7. **Predict behavior**
+
+---
+
+## 1. Pre-rendered Pages Are Not Optional ⚡️
+
+Pre-rendering is not just about **SEO**—it’s about **performance**. Consider the **additional roundtrips** needed for scripts, styles, and API requests. **HTTP/2 pushing** of resources is another future consideration.
+
+> **Note:** This section was previously titled _"Server-rendered"_, but "Pre-rendered" better encapsulates **static site generation**.
+
+A common false dichotomy exists:  
+**"Pre-rendered apps vs. Single Page Apps (SPAs)"**.  
+For the best **UX and performance**, we **shouldn’t** have to choose.
+
+### Why Pre-Rendering Matters
+
+The **Internet** has a **theoretical speed limit**, which has been well explained in Stuart Cheshire's essay _"It's the Latency, Stupid!"_:
+
+- **Distance from Stanford to Boston**: **4320 km**
+- **Speed of light in vacuum**: **300 × 10⁶ m/s**
+- **Speed of light in fiber**: **~66% of vacuum speed** → **200 × 10⁶ m/s**
+- **One-way delay** to Boston: **21.6ms**
+- **Round-trip time (RTT)**: **43.2ms**
+- **Current Internet ping time (Stanford → Boston)**: **~85ms**
+
+Even as bandwidth improves, **latency remains a fundamental constraint**. **Reducing roundtrips** is **critical** for **great UX and responsiveness**.
+
+### The Problem with SPAs
+
+SPAs usually return a **blank page with a `<script>` tag** and then **fetch everything dynamically**. This results in **multiple roundtrips** before the user even sees any content.
+
+**Example: Navigating to `http://app.com/orders/`**
+
+1. The server **knows** the user wants to see their orders.
+2. A **pre-rendered** page could include **server-fetched** data.
+3. Instead, most SPAs return **only a blank page and a `<script>` tag**.
+4. A **second request** is made to fetch the script.
+5. A **third request** fetches the data needed for rendering.
+
+While developers often mitigate this with **proper caching**, it’s still an **avoidable tradeoff**. Instead of relying **only** on client-side JavaScript, **pre-rendering key pages** enhances UX significantly.
+
+---
+
+This is just the **first** of the **7 principles**. The rest of the writeup expands on **how to optimize JavaScript usage** for a **better user experience**.
