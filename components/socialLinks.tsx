@@ -7,41 +7,41 @@ import {
 import { CiLink } from "react-icons/ci";
 import Link from "next/link";
 
-export function Github() {
+export function Github({ link }: { link: string }) {
   return (
-    <Link href="https://github.com/anuprajvarma" target="_blank">
+    <Link href={link} target="_blank">
       <PiGithubLogoThin size={25} />
     </Link>
   );
 }
 
-export function Linkedin() {
+export function Linkedin({ link }: { link: string }) {
   return (
-    <Link href="https://www.linkedin.com/in/anuprajvarma/" target="_blank">
+    <Link href={link} target="_blank">
       <PiLinkedinLogo size={25} />
     </Link>
   );
 }
 
-export function Twitter() {
+export function Twitter({ link }: { link: string }) {
   return (
-    <Link href="https://x.com/Anupraj_varma" target="_blank">
+    <Link href={link} target="_blank">
       <PiTwitterLogoLight size={25} />
     </Link>
   );
 }
 
-export function Youtube() {
+export function Youtube({ link }: { link: string }) {
   return (
-    <Link href="https://www.youtube.com/@MarkVerma" target="_blank">
+    <Link href={link} target="_blank">
       <PiYoutubeLogoLight size={25} />
     </Link>
   );
 }
 
-export function link() {
+export function LinkIcon({ link }: { link: string }) {
   return (
-    <Link href="https://sync-code1.herokuapp.com/" target="_blank">
+    <Link href={link} target="_blank">
       <CiLink size={25} />
     </Link>
   );

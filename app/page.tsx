@@ -1,4 +1,4 @@
-import MyImage from "@/components/MyImage";
+import { MyImage } from "@/components/MyImage";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Link from "next/link";
 import { Github, Twitter, Linkedin, Youtube } from "@/components/socialLinks";
@@ -18,10 +18,10 @@ export default async function Page() {
                 Web and open source.
               </p>
               <div className="flex gap-6 cursor-pointer">
-                <Linkedin />
-                <Github />
-                <Twitter />
-                <Youtube />
+                <Linkedin link="https://www.linkedin.com/in/anuprajvarma/" />
+                <Github link="https://github.com/anuprajvarma" />
+                <Twitter link="https://x.com/Anupraj_varma" />
+                <Youtube link="https://www.youtube.com/@MarkVerma" />
               </div>
             </div>
           </div>

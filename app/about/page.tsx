@@ -1,8 +1,5 @@
-import Image from "next/image";
-import MyImage from "@/components/MyImage";
-import { PiGithubLogoThin } from "react-icons/pi";
-import Link from "next/link";
-import { CiLink } from "react-icons/ci";
+import { MyImage, ProjectImage } from "@/components/MyImage";
+import { Github, LinkIcon } from "@/components/socialLinks";
 
 export default function About() {
   return (
@@ -90,13 +87,7 @@ export default function About() {
           <p className="text-3xl font-medium">Projects</p>
           <div className="flex flex-col gap-12 w-full">
             <div className="bg-grey w-full flex gap-3">
-              <Image
-                className="h-[8rem] w-[13rem] cursor-pointer"
-                src="/synCode.png"
-                alt="Portfolio pic"
-                width={50}
-                height={50}
-              />
+              <ProjectImage />
               <div className="py-2 px-4 flex flex-col gap-2 rounded-md">
                 <p className="text-xl">Sync Code</p>
                 <p className="line-clamp-2 text-sm">
@@ -106,30 +97,14 @@ export default function About() {
                 </p>
                 <div className="relative">
                   <div className="flex absolute right-0 w-[67px] gap-4">
-                    <Link
-                      href="https://github.com/anuprajvarma/Sync_Code"
-                      target="_blank"
-                    >
-                      <PiGithubLogoThin size={25} />
-                    </Link>
-                    <Link
-                      href="https://sync-code1.herokuapp.com/"
-                      target="_blank"
-                    >
-                      <CiLink size={25} />
-                    </Link>
+                    <Github link="https://github.com/anuprajvarma/Sync_Code" />
+                    <LinkIcon link="https://sync-code1.herokuapp.com/" />
                   </div>
                 </div>
               </div>
             </div>
             <div className="bg-grey w-full flex gap-3 rounded-md">
-              <Image
-                className="h-[8rem] w-[13rem] cursor-pointer"
-                src="/searchPage.png"
-                alt="Portfolio pic"
-                width={50}
-                height={50}
-              />
+              <ProjectImage />
               <div className="py-2 px-4 flex flex-col gap-2">
                 <p className="text-xl">Movie Hub</p>
                 <p className="line-clamp-2 text-sm">
@@ -139,15 +114,8 @@ export default function About() {
                 </p>
                 <div className="relative">
                   <div className="flex absolute right-0 w-[67px] gap-4">
-                    <Link
-                      href="https://github.com/anuprajvarma/moviehub"
-                      target="_blank"
-                    >
-                      <PiGithubLogoThin size={25} />
-                    </Link>
-                    <Link href="https://moviehub1.vercel.app/" target="_blank">
-                      <CiLink size={25} />
-                    </Link>
+                    <Github link="https://github.com/anuprajvarma/moviehub" />
+                    <LinkIcon link="https://moviehub1.vercel.app/" />
                   </div>
                 </div>
               </div>
