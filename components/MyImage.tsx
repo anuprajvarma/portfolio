@@ -13,11 +13,11 @@ export function MyImage() {
   );
 }
 
-export function ProjectImage() {
+export function ProjectImage({ imageLink }: { imageLink: string }) {
   return (
     <Image
       className="h-[8rem] w-[13rem] cursor-pointer"
-      src="/searchPage.png"
+      src={imageLink}
       alt="Portfolio pic"
       width={50}
       height={50}

@@ -1,5 +1,5 @@
-import { MyImage, ProjectImage } from "@/components/MyImage";
-import { Github, LinkIcon } from "@/components/socialLinks";
+import { MyImage } from "@/components/MyImage";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function About() {
   return (
@@ -86,40 +86,20 @@ export default function About() {
         <div className="p-4 w-full py-6 flex flex-col gap-4">
           <p className="text-3xl font-medium">Projects</p>
           <div className="flex flex-col gap-12 w-full">
-            <div className="bg-grey w-full flex gap-3">
-              <ProjectImage />
-              <div className="py-2 px-4 flex flex-col gap-2 rounded-md">
-                <p className="text-xl">Sync Code</p>
-                <p className="line-clamp-2 text-sm">
-                  There are many variations of passages of Lorem Ipsum form, by
-                  injected humour, or randomised words which There are many
-                  variations of passages of Lorem.{" "}
-                </p>
-                <div className="relative">
-                  <div className="flex absolute right-0 w-[67px] gap-4">
-                    <Github link="https://github.com/anuprajvarma/Sync_Code" />
-                    <LinkIcon link="https://sync-code1.herokuapp.com/" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-grey w-full flex gap-3 rounded-md">
-              <ProjectImage />
-              <div className="py-2 px-4 flex flex-col gap-2">
-                <p className="text-xl">Movie Hub</p>
-                <p className="line-clamp-2 text-sm">
-                  There are many variations of passages of Lorem Ipsum form, by
-                  injected humour, or randomised words which There are many
-                  variations of passages of Lorem.{" "}
-                </p>
-                <div className="relative">
-                  <div className="flex absolute right-0 w-[67px] gap-4">
-                    <Github link="https://github.com/anuprajvarma/moviehub" />
-                    <LinkIcon link="https://moviehub1.vercel.app/" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProjectCard
+              title="Sync Code"
+              description="Sync Code is a collaborative, real-time code editor where users can seamlessly code together. It provides a platform for multiple users to enter a room, share a unique room ID, and collaborate on code simultaneously. Users can seamlessly edit and download files while communicating through group chat."
+              githubLink="https://github.com/anuprajvarma/Sync_Code"
+              liveLink="https://sync-code1.herokuapp.com/"
+              imageLink="/synCode.png"
+            />
+            <ProjectCard
+              title="Movie Hub"
+              description="It is web application where people can search any movie and they can see movies details such as Director name,Genre."
+              githubLink="https://github.com/anuprajvarma/moviehub"
+              liveLink="https://moviehub1.vercel.app/"
+              imageLink="/searchPage.png"
+            />
           </div>
         </div>
       </div>
