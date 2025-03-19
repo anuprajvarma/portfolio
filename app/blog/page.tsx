@@ -1,47 +1,36 @@
-import fs from "fs";
-import path from "path";
 import Link from "next/link";
-import matter from "gray-matter";
+import { getAllPosts } from "@/lib/mdx";
 
-export default function BlogPosts() {
-  const blogDir = path.join(process.cwd(), "content");
-  const files = fs.readdirSync(blogDir).filter((file) => file.endsWith(".mdx"));
-
-  const posts = files.map((file) => {
-    const filePath = path.join(blogDir, file);
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    const { data } = matter(fileContent); // Extract Front Matter
-    return {
-      slug: file.replace(".mdx", ""),
-      title: data.title,
-      description: data.description,
-      date: data.date,
-    };
-  });
+export default async function BlogPosts() {
+  const posts = await getAllPosts();
 
   return (
     <div className="w-full">
       <div className="w-[40rem] m-auto flex flex-col gap-4 p-4 py-6">
         <div className="border-y border-grey-light py-2">
-          <p className="text-lg">{files.length} post in total</p>
+          <p className="text-lg">{posts.length} post in total</p>
         </div>
         <div className="flex flex-col w-full cursor-pointer">
-          {files.length === 0 ? (
+          {posts.length === 0 ? (
             <p>No blog posts found.</p>
           ) : (
             <>
-              {posts.map(({ slug, title, description, date }) => {
+              {posts.map((post) => {
                 return (
                   <Link
-                    key={slug}
-                    href={`/blog/${slug}`}
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
                     className="py-4 border-b border-grey-light w-full hover:bg-grey"
                   >
                     <div className="flex justify-between">
-                      <h2 className="text-xl font-medium">{title}</h2>
-                      <p>{date}</p>
+                      <h2 className="text-xl font-medium">
+                        {post.frontmatter.title}
+                      </h2>
+                      <p>{post.frontmatter.date}</p>
                     </div>
-                    <p className="font-medium line-clamp-2">{description}</p>
+                    <p className="font-medium line-clamp-2">
+                      {post.frontmatter.description}
+                    </p>
                   </Link>
                 );
               })}
