@@ -1,6 +1,6 @@
 import { getPostBySlug } from "@/lib/mdx";
 
-export default async function Post({ params }: { params: { slug: string } }) {
+export default async function Blog({ params }: { params: { slug: string } }) {
   const { content, frontmatter } = await getPostBySlug(params.slug);
 
   return (

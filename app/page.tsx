@@ -1,11 +1,10 @@
 import MyImage from "@/components/MyImage";
-import { getAllPosts } from "@/lib/mdx";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Link from "next/link";
 import { Github, Twitter, Linkedin, Youtube } from "@/components/socialLinks";
+import { Posts } from "@/components/posts";
 
 export default async function Page() {
-  const posts = await getAllPosts();
   return (
     <div className="w-[40rem] m-auto">
       <div className="p-4 py-6 w-full flex flex-col gap-8">
@@ -33,31 +32,7 @@ export default async function Page() {
         <div>
           <h1 className="text-3xl font-bold">Featured Projects</h1>
           <div className="flex flex-col w-full cursor-pointer">
-            {posts.length === 0 ? (
-              <p>No blog posts found.</p>
-            ) : (
-              <>
-                {posts.map((post) => {
-                  return (
-                    <Link
-                      key={post.slug}
-                      href={`/blog/${post.slug}`}
-                      className="py-4 border-b border-grey-light w-full hover:bg-grey"
-                    >
-                      <div className="flex justify-between">
-                        <h2 className="text-xl font-medium">
-                          {post.frontmatter.title}
-                        </h2>
-                        <p>{post.frontmatter.date}</p>
-                      </div>
-                      <p className="font-medium line-clamp-2">
-                        {post.frontmatter.description}
-                      </p>
-                    </Link>
-                  );
-                })}
-              </>
-            )}
+            <Posts />
           </div>
           <div className="flex flex-col cursor-pointer">
             <div className="relative w-full flex justify-center">
