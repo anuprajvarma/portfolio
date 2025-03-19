@@ -1,4 +1,4 @@
-import Image from "next/image";
+import MyImage from "@/components/MyImage";
 import { getAllPosts } from "@/lib/mdx";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Link from "next/link";
@@ -27,14 +27,7 @@ export default async function Page() {
             </div>
           </div>
           <div className="h-[7rem] w-[7rem]">
-            <Image
-              className="rounded-full"
-              src="/portfolio_pic.png"
-              alt="Portfolio pic"
-              width={50}
-              height={50}
-              layout="responsive"
-            />
+            <MyImage />
           </div>
         </div>
         <div>

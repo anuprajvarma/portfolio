@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MyImage from "@/components/MyImage";
 import { PiGithubLogoThin } from "react-icons/pi";
 import Link from "next/link";
 import { CiLink } from "react-icons/ci";
@@ -22,14 +23,7 @@ export default function About() {
               </p>{" "}
             </div>
             <div className="h-[7rem] w-[7rem]">
-              <Image
-                className="rounded-full"
-                src="/portfolio_pic.png"
-                alt="Portfolio pic"
-                width={50}
-                height={50}
-                layout="responsive"
-              />
+              <MyImage />
             </div>
           </div>
           <p>
