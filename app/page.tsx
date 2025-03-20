@@ -13,9 +13,9 @@ export default async function Page() {
             <h1 className="text-4xl font-bold">Anupraj Varma</h1>
             <div className="flex flex-col gap-4">
               <p className="text-sm">
-                I’m a software engineer and CEO of Vercel. I’m originally from
-                Lanús, Buenos Aires, Argentina. I owe much of my career to the
-                Web and open source.
+                A sociopathic software developer who debugs code like
+                Rick&apos;s experiments—chaotic, unpredictable, yet always
+                groundbreaking.
               </p>
               <div className="flex gap-6 cursor-pointer">
                 <Linkedin link="https://www.linkedin.com/in/anuprajvarma/" />

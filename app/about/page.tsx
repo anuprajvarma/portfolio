@@ -10,13 +10,14 @@ export default function About() {
           <div className="flex justify-between gap-2 w-full">
             <div className="w-10/12 gap-4 flex flex-col">
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some.
+                I’m Anupraj Varma, a software developer at Kroto, based in the
+                dynamic tech hub of Bengaluru, India. Who transform ideas into
+                interactive and scalable web experiences.
               </p>{" "}
               <p>
-                form, by injected humour, or randomised words which don&apos;t
-                look even slightly believable. If you are going to use a
-                passage.
+                Passionate about open-source contributions, traveling, and
+                constantly seeking the next big innovation. Let’s connect and
+                create something extraordinary!
               </p>{" "}
             </div>
             <div className="h-[7rem] w-[7rem]">
@@ -24,61 +25,92 @@ export default function About() {
             </div>
           </div>
           <p>
-            There are many variations of passages of Ipsum available, but the
-            majority have suffered alteration in some. There are many variations
-            of passages of Ipsum available, but the majority.
+            When I’m not debugging, you’ll find me exploring emerging
+            technologies, contributing to open source, or strategizing my next
+            ambitious project.
           </p>{" "}
         </div>
         <div className="p-4 py-6 flex flex-col gap-4">
           <p className="text-3xl font-medium">Experience</p>
           <div className="flex gap-2 w-full">
-            <div className="w-4/12 h-[300px]">
-              <div className="h-[150px]">
+            <div className="w-4/12 h-[400px]">
+              <div className="h-[200px]">
                 <div>
                   <p className="text-2xl font-medium">Kroto</p>
-                  <p className="text-xs">Jan 2024 - Current</p>
+                  <p className="text-xs">October 2024 - Current</p>
                 </div>
               </div>
-              <div className="h-[150px]">
+              <div className="h-[200px]">
                 <div>
                   <p className="text-2xl font-medium">Material Depo</p>
-                  <p className="text-xs">Jan 2023 - Sep 2024</p>
+                  <p className="text-xs">May 2024 - July 2024</p>
                 </div>
               </div>
             </div>
-            <div className="h-[300px] relative">
-              <div className="flex flex-col h-[162] items-center pt-3">
+            <div className="h-[400px] relative">
+              <div className="flex flex-col h-[210] items-center pt-3">
                 <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
                 <div className="w-[2px] h-full bg-white"></div>
               </div>
-              <div className="h-[138] absolute bottom-0">
+              <div className="h-[190] absolute bottom-0">
                 <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
               </div>
             </div>
-            <div className="w-8/12 h-[300px] flex flex-col gap-2 pl-8">
-              <div className="h-[150px] flex flex-col gap-2">
+            <div className="w-8/12 h-[400px] flex flex-col pl-8">
+              <div className="h-[200px] flex flex-col gap-2">
                 <p className="text-2xl font-medium">Software Developer</p>
                 <p className="text-xs">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
+                  I collaborated on Next.js & TailwindCSS codebase to add
+                  features, enhance UI and redesign multiple pages.
                 </p>
-                <ul className="list-disc list-inside text-xs">
-                  <li>There are many variations of passages of Lorem Ipsum </li>
-                  <li>There are many variations of passages of Lorem Ipsum </li>
-                  <li>There are many variations of passages of Lorem Ipsum </li>
-                </ul>
+                <div className="flex flex-col gap-2 text-xs">
+                  <div className="flex">
+                    <li />
+                    <p>
+                      Added ask-query feature on landing page, improving team
+                      communication for 300+ users.
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <li />
+                    <p>
+                      Constructed reusable components, pages, and forms with
+                      streamlined Zod validation integration{" "}
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <li />
+                    <p>
+                      Tech Stack- NextJS, Typescript, TailwindCSS, tRPC, Prisma{" "}
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="h-[150px] flex flex-col gap-2">
+              <div className="h-[200px] flex flex-col gap-2">
                 <p className="text-2xl font-medium">Frontend Developer</p>
                 <p className="text-xs">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
+                  Working at Material Depo, I was responsible for developing and
+                  maintaining the frontend of the website.
                 </p>
-                <ul className="list-disc list-inside text-xs">
-                  <li>There are many variations of passages of Lorem Ipsum </li>
-                  <li>There are many variations of passages of Lorem Ipsum </li>
-                  <li>There are many variations of passages of Lorem Ipsum </li>
-                </ul>
+                <div className="flex flex-col gap-2 text-xs">
+                  <div className="flex">
+                    <li />
+                    <p>
+                      Integrated Mix Panel Analytics tool for various functions,
+                      which highly impacted the product launch analysis
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <li />
+                    <p>
+                      Worked on two project on ReactJS and delivered their MVP
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <li />
+                    <p>Tech Stack- ReactJS, Typescript, TailwindCSS</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
