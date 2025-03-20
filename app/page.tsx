@@ -25,9 +25,7 @@ export default async function Page() {
               </div>
             </div>
           </div>
-          <div className="h-[7rem] w-[7rem]">
-            <MyImage />
-          </div>
+          <MyImage picHeight={100} picWeight={100} />
         </div>
         <div>
           <h1 className="text-3xl font-bold">Featured Projects</h1>

@@ -3,15 +3,16 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { PiSunDim, PiMoon } from "react-icons/pi";
+import ThemeToggle from "./ThemeToggle";
+// import { PiSunDim, PiMoon } from "react-icons/pi";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  // const [isDark, setIsDark] = useState(false);
 
-  function toggleDarkMode() {
-    setIsDark(!isDark);
-  }
+  // function toggleDarkMode() {
+  //   setIsDark(!isDark);
+  // }
 
   return (
     <header className="px-4">
@@ -39,7 +40,8 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        {isDark ? (
+        <ThemeToggle />
+        {/* {isDark ? (
           <PiMoon
             className="cursor-pointer size-10 hover:bg-grey rounded-md p-2"
             onClick={toggleDarkMode}
@@ -49,7 +51,7 @@ const Header = () => {
             className="cursor-pointer size-10 hover:bg-grey rounded-md p-2"
             onClick={toggleDarkMode}
           />
-        )}
+        )} */}
       </div>
     </header>
   );

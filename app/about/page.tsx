@@ -20,7 +20,7 @@ export default function About() {
               </p>{" "}
             </div>
             <div className="h-[7rem] w-[7rem]">
-              <MyImage />
+              <MyImage picHeight={100} picWeight={100} />
             </div>
           </div>
           <p>
