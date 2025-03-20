@@ -15,7 +15,8 @@ export async function Posts() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="py-4 border-b border-grey-light w-full hover:bg-grey"
+                className="py-4 w-full hover:bg-[var(--bg)]"
+                style={{ borderBottom: "1px solid var(--bg)" }}
               >
                 <div className="flex justify-between">
                   <h2 className="text-xl font-medium">
@@ -39,7 +40,13 @@ export async function PostLength() {
   const posts = await getAllPosts();
 
   return (
-    <div className="border-y border-grey-light py-2">
+    <div
+      className="py-2"
+      style={{
+        borderBottom: "1px solid var(--bg)",
+        borderTop: "1px solid var(--bg)",
+      }}
+    >
       <p className="text-lg">{posts.length} post in total</p>
     </div>
   );

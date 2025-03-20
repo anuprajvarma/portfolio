@@ -4,15 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
-// import { PiSunDim, PiMoon } from "react-icons/pi";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [isDark, setIsDark] = useState(false);
-
-  // function toggleDarkMode() {
-  //   setIsDark(!isDark);
-  // }
 
   return (
     <header className="px-4">
@@ -26,16 +20,16 @@ const Header = () => {
           } lg:block`}
         >
           <ul className="flex flex-col text-2xl lg:flex-row gap-4">
-            <li className="hover:bg-grey rounded-md p-2">
+            <li className="hover:bg-[var(--bg)] rounded-md p-2">
               <Link href="/">Home</Link>
             </li>
-            <li className="hover:bg-grey rounded-md p-2">
+            <li className="hover:bg-[var(--bg)] rounded-md p-2">
               <Link href="/about">About</Link>
             </li>
-            <li className="hover:bg-grey rounded-md p-2">
+            <li className="hover:bg-[var(--bg)] rounded-md p-2">
               <Link href="/blog">Blog</Link>
             </li>
-            <li className="hover:bg-grey rounded-md p-2">
+            <li className="hover:bg-[var(--bg)] rounded-md p-2">
               <Link href="/resume">Resume</Link>
             </li>
           </ul>

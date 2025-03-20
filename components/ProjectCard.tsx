@@ -15,7 +15,12 @@ export default function ProjectCard({
   imageLink: string;
 }) {
   return (
-    <div className="bg-grey w-full flex gap-3">
+    <div
+      className="w-full flex gap-3"
+      style={{
+        backgroundColor: "var(--bg)",
+      }}
+    >
       <ProjectImage imageLink={imageLink} />
       <div className="py-2 px-4 flex flex-col gap-2 rounded-md">
         <p className="text-xl">{title}</p>
