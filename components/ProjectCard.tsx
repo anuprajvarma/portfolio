@@ -16,13 +16,13 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className="w-full flex gap-3"
+      className="w-full flex gap-3 rounded-md"
       style={{
         backgroundColor: "var(--bg)",
       }}
     >
       <ProjectImage imageLink={imageLink} />
-      <div className="py-2 px-4 flex flex-col gap-2 rounded-md">
+      <div className="py-2 px-4 flex flex-col gap-2">
         <p className="text-xl">{title}</p>
         <p className="line-clamp-2 text-sm">{description}</p>
         <div className="relative">

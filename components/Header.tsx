@@ -35,17 +35,6 @@ const Header = () => {
           </ul>
         </nav>
         <ThemeToggle />
-        {/* {isDark ? (
-          <PiMoon
-            className="cursor-pointer size-10 hover:bg-grey rounded-md p-2"
-            onClick={toggleDarkMode}
-          />
-        ) : (
-          <PiSunDim
-            className="cursor-pointer size-10 hover:bg-grey rounded-md p-2"
-            onClick={toggleDarkMode}
-          />
-        )} */}
       </div>
     </header>
   );
