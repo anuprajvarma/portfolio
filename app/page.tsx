@@ -8,8 +8,8 @@ export default async function Page() {
   return (
     <div className="w-[40rem] m-auto">
       <div className="p-4 py-6 w-full flex flex-col gap-8">
-        <div className="flex justify-between w-full">
-          <div className="w-9/12 flex flex-col gap-3">
+        <div className="flex gap-1 justify-between w-full">
+          <div className="flex flex-col gap-3">
             <h1 className="text-4xl font-bold">Anupraj Varma</h1>
             <div className="flex flex-col gap-4">
               <p className="text-sm">
