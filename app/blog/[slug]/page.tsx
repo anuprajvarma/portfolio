@@ -7,7 +7,17 @@ interface BlogPageProps {
 }
 
 export default async function Blog({ params }: BlogPageProps) {
-  const { content, frontmatter } = await getPostBySlug(params?.slug);
+  if (!params?.slug) {
+    return <p>Post not found</p>;
+  }
+
+  const post = await getPostBySlug(params.slug);
+
+  if (!post) {
+    return <p>Post not found</p>;
+  }
+
+  const { content, frontmatter } = post;
 
   return (
     <div className="w-full">
