@@ -60,7 +60,7 @@ export default function About() {
               <div className="sm:h-[200px] flex flex-col gap-2">
                 <div className="py-2">
                   <p className="text-2xl font-medium">Software Developer</p>
-                  <div>
+                  <div className="sm:hidden flex flex-col">
                     <p className="text-md font-medium">Kroto</p>
                     <p className="text-xs">October 2024 - Current</p>
                   </div>
@@ -95,7 +95,7 @@ export default function About() {
               <div className="sm:h-[200px] flex flex-col gap-2">
                 <div className="py-2">
                   <p className="text-2xl font-medium">Frontend Developer</p>
-                  <div>
+                  <div className="sm:hidden flex flex-col">
                     <p className="text-md font-medium">Material Depo</p>
                     <p className="text-xs">May 2024 - July 2024</p>
                   </div>

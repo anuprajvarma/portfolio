@@ -3,7 +3,7 @@ import { MyImage } from "@/components/MyImage";
 import Link from "next/link";
 
 export default async function Blog({ params }: { params: { slug: string } }) {
-  const { content, frontmatter } = await getPostBySlug(params.slug);
+  const { content, frontmatter } = await getPostBySlug(await params.slug);
 
   return (
     <div className="w-full">
