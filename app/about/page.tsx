@@ -48,17 +48,17 @@ export default function About() {
               </div>
             </div>
             <div className="h-[400px] relative sm:flex hidden">
-              <div className="flex flex-col h-[210] items-center pt-3">
+              <div className="flex flex-col h-[220] items-center pt-3">
                 <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
                 <div className="w-[2px] h-full bg-white"></div>
               </div>
-              <div className="h-[190] absolute bottom-0">
+              <div className="h-[180] absolute bottom-0">
                 <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
               </div>
             </div>
             <div className="sm:w-8/12 w-full sm:h-[400px] flex flex-col gap-4 sm:pl-8">
               <div className="sm:h-[200px] flex flex-col gap-2">
-                <div className="py-2">
+                <div>
                   <p className="text-2xl font-medium">Software Developer</p>
                   <div className="sm:hidden flex flex-col">
                     <p className="text-md font-medium">Kroto</p>
@@ -93,7 +93,7 @@ export default function About() {
                 </div>
               </div>
               <div className="sm:h-[200px] flex flex-col gap-2">
-                <div className="py-2">
+                <div>
                   <p className="text-2xl font-medium">Frontend Developer</p>
                   <div className="sm:hidden flex flex-col">
                     <p className="text-md font-medium">Material Depo</p>
