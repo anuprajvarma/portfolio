@@ -22,7 +22,7 @@ export function MyImage({
 export function ProjectImage({ imageLink }: { imageLink: string }) {
   return (
     <Image
-      className="h-[8rem] w-[13rem] cursor-pointer rounded-l-md"
+      className="h-[8rem] w-[13rem] cursor-pointer rounded-l-md sm:flex hidden"
       src={imageLink}
       alt="Portfolio pic"
       width={50}

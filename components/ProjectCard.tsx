@@ -23,14 +23,14 @@ export default function ProjectCard({
     >
       <ProjectImage imageLink={imageLink} />
       <div className="py-2 px-4 flex flex-col gap-2">
-        <p className="text-xl">{title}</p>
-        <p className="line-clamp-2 text-sm">{description}</p>
-        <div className="relative">
-          <div className="flex absolute right-0 w-[67px] gap-4">
+        <div className="flex justify-between">
+          <p className="text-xl">{title}</p>
+          <div className="flex gap-2">
             <Github link={githubLink} />
             <LinkIcon link={liveLink} />
           </div>
         </div>
+        <p className="line-clamp-3 text-sm">{description}</p>
       </div>
     </div>
   );

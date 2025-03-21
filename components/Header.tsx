@@ -9,17 +9,17 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="px-4">
-      <div className="w-[40rem] m-auto flex justify-between items-center px-2">
-        <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+    <header className="w-full">
+      <div className="sm:w-[40rem] w-full m-auto flex justify-between items-center px-4">
+        <button className="sm:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
         <nav
-          className={`absolute cursor-pointer lg:static top-16 left-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent lg:p-0 ${
+          className={`absolute cursor-pointer sm:static top-16 left-0 sm:w-auto bg-gray-900 sm:bg-transparent sm:p-0 ${
             isOpen ? "block" : "hidden"
-          } lg:block`}
+          } sm:block`}
         >
-          <ul className="flex flex-col text-2xl lg:flex-row gap-4">
+          <ul className="flex flex-col text-2xl sm:flex-row gap-4">
             <li className="hover:bg-[var(--bg)] rounded-md p-2">
               <Link href="/">Home</Link>
             </li>

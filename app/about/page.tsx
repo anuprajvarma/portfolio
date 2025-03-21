@@ -4,11 +4,11 @@ import ProjectCard from "@/components/ProjectCard";
 export default function About() {
   return (
     <div className="w-full">
-      <div className="w-[40rem] m-auto">
+      <div className="sm:w-[40rem] w-full m-auto">
         <div className="m-auto p-4 py-6 flex flex-col text-sm gap-2">
           <p className="text-3xl font-medium">About</p>
-          <div className="flex justify-between gap-2 w-full">
-            <div className="w-10/12 gap-4 flex flex-col">
+          <div className="flex sm:flex-row flex-col-reverse justify-between gap-2 w-full">
+            <div className="sm:w-10/12 gap-4 flex flex-col">
               <p>
                 I’m Anupraj Varma, a software developer at Kroto, based in the
                 dynamic tech hub of Bengaluru, India. Who transform ideas into
@@ -20,7 +20,7 @@ export default function About() {
                 create something extraordinary!
               </p>{" "}
             </div>
-            <div className="h-[7rem] w-[7rem]">
+            <div className="h-[7rem] w-[7rem] flex m-auto">
               <MyImage picHeight={100} picWeight={100} />
             </div>
           </div>
@@ -33,7 +33,7 @@ export default function About() {
         <div className="p-4 py-6 flex flex-col gap-4">
           <p className="text-3xl font-medium">Experience</p>
           <div className="flex gap-2 w-full">
-            <div className="w-4/12 h-[400px]">
+            <div className="w-4/12 h-[400px] sm:flex sm:flex-col hidden">
               <div className="h-[200px]">
                 <div>
                   <p className="text-2xl font-medium">Kroto</p>
@@ -47,7 +47,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="h-[400px] relative">
+            <div className="h-[400px] relative sm:flex hidden">
               <div className="flex flex-col h-[210] items-center pt-3">
                 <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
                 <div className="w-[2px] h-full bg-white"></div>
@@ -56,9 +56,15 @@ export default function About() {
                 <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
               </div>
             </div>
-            <div className="w-8/12 h-[400px] flex flex-col pl-8">
-              <div className="h-[200px] flex flex-col gap-2">
-                <p className="text-2xl font-medium">Software Developer</p>
+            <div className="sm:w-8/12 w-full sm:h-[400px] flex flex-col gap-4 sm:pl-8">
+              <div className="sm:h-[200px] flex flex-col gap-2">
+                <div className="py-2">
+                  <p className="text-2xl font-medium">Software Developer</p>
+                  <div>
+                    <p className="text-md font-medium">Kroto</p>
+                    <p className="text-xs">October 2024 - Current</p>
+                  </div>
+                </div>
                 <p className="text-xs">
                   I collaborated on Next.js & TailwindCSS codebase to add
                   features, enhance UI and redesign multiple pages.
@@ -66,28 +72,34 @@ export default function About() {
                 <div className="flex flex-col gap-2 text-xs">
                   <div className="flex">
                     <li />
-                    <p>
+                    <p className="">
                       Added ask-query feature on landing page, improving team
                       communication for 300+ users.
                     </p>
                   </div>
                   <div className="flex">
                     <li />
-                    <p>
+                    <p className="">
                       Constructed reusable components, pages, and forms with
                       streamlined Zod validation integration{" "}
                     </p>
                   </div>
                   <div className="flex">
                     <li />
-                    <p>
+                    <p className="">
                       Tech Stack- NextJS, Typescript, TailwindCSS, tRPC, Prisma{" "}
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="h-[200px] flex flex-col gap-2">
-                <p className="text-2xl font-medium">Frontend Developer</p>
+              <div className="sm:h-[200px] flex flex-col gap-2">
+                <div className="py-2">
+                  <p className="text-2xl font-medium">Frontend Developer</p>
+                  <div>
+                    <p className="text-md font-medium">Material Depo</p>
+                    <p className="text-xs">May 2024 - July 2024</p>
+                  </div>
+                </div>
                 <p className="text-xs">
                   Working at Material Depo, I was responsible for developing and
                   maintaining the frontend of the website.
