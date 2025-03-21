@@ -11,14 +11,16 @@ export default async function Page() {
         <div className="p-4 py-6 w-full flex flex-col gap-8">
           <div className="flex sm:flex-row flex-col-reverse  gap-1 sm:justify-between justify-center items-center w-full">
             <div className="flex flex-col gap-3">
-              <h1 className="text-4xl font-bold">Anupraj Varma</h1>
-              <div className="flex flex-col gap-4">
+              <h1 className="text-4xl font-bold flex justify-center sm:justify-start">
+                Anupraj Varma
+              </h1>
+              <div className="flex flex-col sm:text-start text-center gap-4">
                 <p className="text-sm">
                   A sociopathic software developer who debugs code like
                   Rick&apos;s experiments—chaotic, unpredictable, yet always
                   groundbreaking.
                 </p>
-                <div className="flex gap-6 cursor-pointer">
+                <div className="flex gap-6 cursor-pointer justify-center sm:justify-start">
                   <Linkedin link="https://www.linkedin.com/in/anuprajvarma/" />
                   <Github link="https://github.com/anuprajvarma" />
                   <Twitter link="https://x.com/Anupraj_varma" />
@@ -26,7 +28,7 @@ export default async function Page() {
                 </div>
               </div>
             </div>
-            <div className="h-[8rem] w-[10rem]">
+            <div className="h-[8rem] w-[10rem] flex justify-center sm:justify-start">
               <MyImage picHeight={100} picWeight={100} />
             </div>
           </div>

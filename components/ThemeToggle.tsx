@@ -22,7 +22,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 cursor-pointer rounded-lg hover:bg-[var(--bg)] transition"
+      className="p-2 sm:flex hidden cursor-pointer rounded-lg hover:bg-[var(--bg)] transition"
     >
       {theme === "light" ? <PiMoon size={20} /> : <PiSunDim size={20} />}
     </button>
