@@ -7,7 +7,7 @@ export default async function Blog({ params }: { params: { slug: string } }) {
 
   return (
     <div className="w-full">
-      <div className="w-[40rem] m-auto p-4 flex flex-col gap-6">
+      <div className="sm:w-[40rem] w-full m-auto p-4 flex flex-col gap-6">
         <div className="flex flex-col">
           <h1 className="text-3xl font-medium">{frontmatter.title}</h1>
           <div className="flex gap-1 items-center text-xs">
