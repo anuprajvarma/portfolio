@@ -2,7 +2,11 @@ import { getPostBySlug } from "@/lib/mdx";
 import { MyImage } from "@/components/MyImage";
 import Link from "next/link";
 
-export default async function Blog({ params }: { params: { slug: string } }) {
+interface BlogPageProps {
+  params: { slug: string };
+}
+
+export default async function Blog({ params }: BlogPageProps) {
   const { content, frontmatter } = await getPostBySlug(params?.slug);
 
   return (
