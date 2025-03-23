@@ -135,7 +135,7 @@ export default function About() {
               description="Sync Code is a collaborative, real-time code editor where users can seamlessly code together. It provides a platform for multiple users to enter a room, share a unique room ID, and collaborate on code simultaneously. Users can seamlessly edit and download files while communicating through group chat."
               githubLink="https://github.com/anuprajvarma/Sync_Code"
               liveLink="https://sync-code1.herokuapp.com/"
-              imageLink="/synCode.png"
+              imageLink="/synccodeproject.png"
             />
             <ProjectCard
               title="Movie Hub"
