@@ -21,12 +21,15 @@ export function MyImage({
 
 export function ProjectImage({ imageLink }: { imageLink: string }) {
   return (
-    <Image
-      className="h-[8rem] w-[13rem] cursor-pointer rounded-l-md sm:flex hidden"
-      src={imageLink}
-      alt="Portfolio pic"
-      width={50}
-      height={50}
-    />
+    <div className="relative w-[12rem] h-[8rem] cursor-pointer sm:flex hidden">
+      <Image
+        className="rounded-l-md"
+        src={imageLink}
+        alt="High-quality image"
+        fill
+        objectFit="cover"
+        quality={100}
+      />
+    </div>
   );
 }

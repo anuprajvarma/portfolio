@@ -16,13 +16,13 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className="w-full flex gap-3 rounded-md"
+      className="w-full flex rounded-md"
       style={{
         backgroundColor: "var(--bg)",
       }}
     >
       <ProjectImage imageLink={imageLink} />
-      <div className="py-2 px-4 flex flex-col gap-2">
+      <div className="py-2 px-4 flex flex-col gap-2 sm:w-[26rem] w-[40rem]">
         <div className="flex justify-between">
           <p className="text-xl">{title}</p>
           <div className="flex gap-2">
