@@ -1,47 +1,12 @@
-import { getPostBySlug } from "@/lib/mdx";
-import { MyImage } from "@/components/MyImage";
-import Link from "next/link";
+// import { getPostBySlug } from "@/lib/mdx";
+// import { MyImage } from "@/components/MyImage";
+// import Link from "next/link";
 
-interface BlogPageProps {
-  params: { slug: string };
-}
-
-export default async function Blog({ params }: BlogPageProps) {
-  const { slug } = await params;
-  console.log("Slug:", slug);
-  if (!slug) {
-    return <p>Post not found</p>;
-  }
-
-  const post = await getPostBySlug(slug);
-
-  if (!post) {
-    return <p>Post not found</p>;
-  }
-
-  const { content, frontmatter } = post;
-
+export default async function Blog() {
   return (
     <div className="w-full flex mt-20 z-10">
       <div className="sm:w-[55rem] w-full m-auto p-4 flex flex-col gap-6 border border-[var(--bg)] rounded-sm">
-        <div className="flex flex-col gap-2">
-          <h1 className="text-3xl font-medium">{frontmatter.title}</h1>
-          <div className="flex gap-1 items-center text-sm">
-            <div className="flex gap-2 items-center">
-              <MyImage picHeight={30} picWeight={30} />
-              <Link
-                href="https://x.com/Anupraj_varma"
-                target="_blank"
-                className="cursor-pointer"
-              >
-                @Anupraj
-              </Link>
-            </div>
-            <p>| {frontmatter.date}</p>
-          </div>
-        </div>
-        <p className="font-medium">{frontmatter.description}</p>
-        <article className="prose mt-4">{content}</article>
+        saflksjdflkj
       </div>
     </div>
   );

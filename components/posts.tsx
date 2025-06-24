@@ -1,36 +1,35 @@
-import { getAllPosts } from "@/lib/mdx";
+// import { getAllPosts } from "@/lib/mdx";
+import { Blogs } from "@/customData/blogs";
 import Link from "next/link";
 
 export async function Posts() {
-  const posts = await getAllPosts();
+  // const posts = await getAllPosts();
 
   return (
     <>
-      {posts.length === 0 ? (
+      {Blogs.length === 0 ? (
         <p>No blog posts found.</p>
       ) : (
         <div className="px-2 rounded-sm">
-          {posts.map((post) => {
+          {Blogs.map((post, index) => {
             return (
               <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
+                key={index}
+                href={`/blog/${post.title}`}
                 className="py-4 flex hover:bg-[var(--bg)]/70 px-4"
                 style={{ borderBottom: "1px solid var(--bg)" }}
               >
                 <div className="flex w-full flex-col gap-2 justify-between">
                   <div className="w-full flex justify-between">
-                    <h2 className="text-xl font-medium">
-                      {post.frontmatter.title}
-                    </h2>
+                    <h2 className="text-xl font-medium">{post.title}</h2>
                     <div className="font-medium flex sm:hidden text-sm sm:w-[6rem]">
-                      {post.frontmatter.date}
+                      {post.date}
                     </div>
                   </div>
-                  <p className="line-clamp-1">{post.frontmatter.description}</p>
+                  <p className="line-clamp-1">{post.description}</p>
                 </div>
                 <div className="font-medium sm:flex hidden justify-end text-sm sm:w-[6rem]">
-                  {post.frontmatter.date}
+                  {post.date}
                 </div>
               </Link>
             );
@@ -42,7 +41,7 @@ export async function Posts() {
 }
 
 export async function PostLength() {
-  const posts = await getAllPosts();
+  // const posts = await getAllPosts();
 
   return (
     <div
@@ -52,7 +51,7 @@ export async function PostLength() {
         borderTop: "1px solid var(--bg)",
       }}
     >
-      <p className="text-xl font-medium">{posts.length} post in total</p>
+      <p className="text-xl font-medium">{Blogs.length} post in total</p>
     </div>
   );
 }
