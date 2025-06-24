@@ -7,11 +7,13 @@ interface BlogPageProps {
 }
 
 export default async function Blog({ params }: BlogPageProps) {
-  if (!params?.slug) {
+  const { slug } = await params;
+  console.log("Slug:", slug);
+  if (!slug) {
     return <p>Post not found</p>;
   }
 
-  const post = await getPostBySlug(params.slug);
+  const post = await getPostBySlug(slug);
 
   if (!post) {
     return <p>Post not found</p>;
@@ -20,7 +22,7 @@ export default async function Blog({ params }: BlogPageProps) {
   const { content, frontmatter } = post;
 
   return (
-    <div className="w-full">
+    <div className="w-full flex mt-10 z-10">
       <div className="sm:w-[55rem] w-full m-auto p-4 flex flex-col gap-6">
         <div className="flex flex-col">
           <h1 className="text-3xl font-medium">{frontmatter.title}</h1>

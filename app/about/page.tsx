@@ -3,7 +3,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 export default function About() {
   return (
-    <div className="w-full">
+    <div className="w-full mt-10">
       <div className="sm:w-[55rem] w-full m-auto">
         <div className="m-auto p-4 py-6 flex flex-col text-sm gap-2 sm:text-start text-center">
           <p className="text-3xl font-medium text-start">About</p>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mt-10">
       <div className="sm:w-[55rem] w-full m-auto flex flex-col gap-2 pt-10">
         <div className="w-full flex justify-center">
           <a
