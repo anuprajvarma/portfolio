@@ -7,11 +7,11 @@ import { Posts } from "@/components/posts";
 
 export default async function Page() {
   return (
-    <div className="w-full mt-20">
+    <div className="w-full">
       <div className="sm:w-[55rem] w-full m-auto border border-[var(--bg)] rounded-sm">
         <div className="px-4 pt-4 w-full flex flex-col gap-8">
           <div className="flex sm:flex-row flex-col-reverse  gap-1 sm:justify-between justify-center items-center w-full">
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-4">
               <h1 className="text-4xl font-medium flex justify-center sm:justify-start">
                 Anupraj Varma
               </h1>
@@ -33,8 +33,8 @@ export default async function Page() {
               <MyImage picHeight={100} picWeight={100} />
             </div>
           </div>
-          <div>
-            <h1 className="text-3xl font-medium">Featured Projects</h1>
+          <div className="flex flex-col gap-2">
+            <h1 className="text-3xl font-medium">Featured Blogs</h1>
             <div className="flex flex-col gap-4 w-full cursor-pointer">
               <Posts />
               <div className="flex flex-col cursor-pointer">

@@ -3,9 +3,9 @@ import ProjectCard from "@/components/ProjectCard";
 
 export default function About() {
   return (
-    <div className="w-full mt-20">
+    <div className="w-full">
       <div className="sm:w-[55rem] w-full m-auto border border-[var(--bg)] rounded-sm">
-        <div className="m-auto p-4 py-6 flex flex-col text-md gap-2 sm:text-start text-center">
+        <div className="m-auto p-4 py-6 flex flex-col text-md gap-4 sm:text-start text-center">
           <p className="text-4xl font-medium text-start">About</p>
           <div className="flex sm:flex-row flex-col-reverse justify-between gap-2 w-full">
             <div className="sm:w-10/12 gap-4 flex flex-col">
@@ -30,7 +30,7 @@ export default function About() {
             ambitious project.
           </p>{" "}
         </div>
-        <div className="p-4 py-6 flex flex-col gap-4">
+        <div className="p-4 py-6 flex flex-col gap-8">
           <p className="text-4xl font-medium">Experience</p>
           <div className="flex gap-2 w-full">
             <div className="w-4/12 h-[400px] sm:flex sm:flex-col hidden">

@@ -27,11 +27,11 @@ export function ProjectImage({ imageLink }: { imageLink: string }) {
 
   return (
     <div
-      className="relative w-[23rem] h-[12rem] cursor-pointer sm:flex hidden"
+      className="relative w-[23rem] h-[11rem] cursor-pointer sm:flex hidden"
       // onClick={() => setIsOpen(true)}
     >
       <Image
-        className="rounded-l-md"
+        className="rounded-md"
         src={imageLink}
         alt="High-quality image"
         fill

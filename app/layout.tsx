@@ -26,10 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-full`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-full flex flex-col justify-center items-center bg-[url('/topography.svg')]`}
       >
-        <Header />
-        <main>{children}</main>
+        <div className="sm:w-[55rem] flex flex-col gap-8 py-8 w-full bg-black">
+          <Header />
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );

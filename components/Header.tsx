@@ -8,8 +8,8 @@ const Header = () => {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <header className="w-full flex fixed top-0 z-20 backdrop-blur">
-      <div className="sm:w-[55rem] w-full m-auto flex justify-between items-center px-2 py-2 border border-[var(--bg)] bg-[var(--background)]/50 rounded-b-sm">
+    <header className="w-full flex">
+      <div className="sm:w-[55rem] w-full m-auto flex justify-between items-center px-2 py-2 border border-[var(--bg)] bg-[var(--background)]/50 rounded-sm">
         <nav className={`cursor-pointer w-full flex`}>
           <ul className="flex text-2xl w-full justify-between sm:justify-start flex-row gap-4">
             <li

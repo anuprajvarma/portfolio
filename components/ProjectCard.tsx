@@ -22,10 +22,10 @@ export default function ProjectCard({
       }}
     >
       <ProjectImage imageLink={imageLink} />
-      <div className="py-2 px-4 flex flex-col gap-2">
+      <div className="pb-4 pt-2 px-4 flex flex-col gap-1">
         <div className="flex justify-between">
           <p className="text-2xl font-medium">{title}</p>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <Github link={githubLink} />
             <LinkIcon link={liveLink} />
           </div>

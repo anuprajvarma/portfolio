@@ -16,7 +16,7 @@ export async function Posts() {
               <Link
                 key={index}
                 href={`/blog/${post.title}`}
-                className="py-4 flex hover:bg-[var(--bg)]/70 px-4"
+                className="py-4 flex hover:bg-[var(--bg)]/70 px-4 my-2"
                 style={{ borderBottom: "1px solid var(--bg)" }}
               >
                 <div className="flex w-full flex-col gap-2 justify-between">
@@ -51,7 +51,9 @@ export async function PostLength() {
         borderTop: "1px solid var(--bg)",
       }}
     >
-      <p className="text-xl font-medium">{Blogs.length} post in total</p>
+      <p className="text-md font-medium text-end">
+        {Blogs.length} post in total
+      </p>
     </div>
   );
 }
