@@ -9,17 +9,17 @@ export async function Posts() {
       {posts.length === 0 ? (
         <p>No blog posts found.</p>
       ) : (
-        <>
+        <div className="px-2 rounded-sm">
           {posts.map((post) => {
             return (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="py-4 flex hover:bg-[var(--bg)]"
+                className="py-4 flex hover:bg-[var(--bg)]/70 px-4"
                 style={{ borderBottom: "1px solid var(--bg)" }}
               >
-                <div className="flex flex-col gap-2 justify-between">
-                  <div className="">
+                <div className="flex w-full flex-col gap-2 justify-between">
+                  <div className="w-full flex justify-between">
                     <h2 className="text-xl font-medium">
                       {post.frontmatter.title}
                     </h2>
@@ -35,7 +35,7 @@ export async function Posts() {
               </Link>
             );
           })}
-        </>
+        </div>
       )}
     </>
   );
@@ -52,7 +52,7 @@ export async function PostLength() {
         borderTop: "1px solid var(--bg)",
       }}
     >
-      <p className="text-lg">{posts.length} post in total</p>
+      <p className="text-xl font-medium">{posts.length} post in total</p>
     </div>
   );
 }

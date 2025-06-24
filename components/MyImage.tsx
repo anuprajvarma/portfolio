@@ -27,7 +27,7 @@ export function ProjectImage({ imageLink }: { imageLink: string }) {
 
   return (
     <div
-      className="relative w-[12rem] h-[8rem] cursor-pointer sm:flex hidden"
+      className="relative w-[23rem] h-[12rem] cursor-pointer sm:flex hidden"
       // onClick={() => setIsOpen(true)}
     >
       <Image

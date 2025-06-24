@@ -16,15 +16,15 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className="w-full flex rounded-md"
+      className="flex flex-col rounded-md w-[23rem]"
       style={{
         backgroundColor: "var(--bg)",
       }}
     >
       <ProjectImage imageLink={imageLink} />
-      <div className="py-2 px-4 flex flex-col gap-2 sm:w-[26rem] w-[40rem]">
+      <div className="py-2 px-4 flex flex-col gap-2">
         <div className="flex justify-between">
-          <p className="text-xl">{title}</p>
+          <p className="text-2xl font-medium">{title}</p>
           <div className="flex gap-2">
             <Github link={githubLink} />
             <LinkIcon link={liveLink} />

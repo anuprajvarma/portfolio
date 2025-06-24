@@ -3,10 +3,10 @@ import ProjectCard from "@/components/ProjectCard";
 
 export default function About() {
   return (
-    <div className="w-full mt-10">
-      <div className="sm:w-[55rem] w-full m-auto">
-        <div className="m-auto p-4 py-6 flex flex-col text-sm gap-2 sm:text-start text-center">
-          <p className="text-3xl font-medium text-start">About</p>
+    <div className="w-full mt-20">
+      <div className="sm:w-[55rem] w-full m-auto border border-[var(--bg)] rounded-sm">
+        <div className="m-auto p-4 py-6 flex flex-col text-md gap-2 sm:text-start text-center">
+          <p className="text-4xl font-medium text-start">About</p>
           <div className="flex sm:flex-row flex-col-reverse justify-between gap-2 w-full">
             <div className="sm:w-10/12 gap-4 flex flex-col">
               <p>
@@ -31,19 +31,19 @@ export default function About() {
           </p>{" "}
         </div>
         <div className="p-4 py-6 flex flex-col gap-4">
-          <p className="text-3xl font-medium">Experience</p>
+          <p className="text-4xl font-medium">Experience</p>
           <div className="flex gap-2 w-full">
             <div className="w-4/12 h-[400px] sm:flex sm:flex-col hidden">
               <div className="h-[200px]">
                 <div>
-                  <p className="text-2xl font-medium">Kroto</p>
-                  <p className="text-xs">October 2024 - Current</p>
+                  <p className="text-3xl font-medium">Kroto</p>
+                  <p className="text-sm">October 2024 - Current</p>
                 </div>
               </div>
               <div className="h-[200px]">
                 <div>
-                  <p className="text-2xl font-medium">Material Depo</p>
-                  <p className="text-xs">May 2024 - July 2024</p>
+                  <p className="text-3xl font-medium">Material Depo</p>
+                  <p className="text-sm">May 2024 - July 2024</p>
                 </div>
               </div>
             </div>
@@ -59,17 +59,17 @@ export default function About() {
             <div className="sm:w-8/12 w-full sm:h-[400px] flex flex-col gap-4 sm:pl-8">
               <div className="sm:h-[200px] flex flex-col gap-2">
                 <div>
-                  <p className="text-2xl font-medium">Software Developer</p>
+                  <p className="text-3xl font-medium">Software Developer</p>
                   <div className="sm:hidden flex flex-col">
                     <p className="text-md font-medium">Kroto</p>
-                    <p className="text-xs">October 2024 - Current</p>
+                    <p className="text-sm">October 2024 - Current</p>
                   </div>
                 </div>
-                <p className="text-xs">
+                <p className="text-sm">
                   I collaborated on Next.js & TailwindCSS codebase to add
                   features, enhance UI and redesign multiple pages.
                 </p>
-                <div className="flex flex-col gap-2 text-xs">
+                <div className="flex flex-col gap-2 text-sm">
                   <div className="flex">
                     <li />
                     <p className="">
@@ -94,17 +94,17 @@ export default function About() {
               </div>
               <div className="sm:h-[200px] flex flex-col gap-2">
                 <div>
-                  <p className="text-2xl font-medium">Frontend Developer</p>
+                  <p className="text-3xl font-medium">Frontend Developer</p>
                   <div className="sm:hidden flex flex-col">
                     <p className="text-md font-medium">Material Depo</p>
-                    <p className="text-xs">May 2024 - July 2024</p>
+                    <p className="text-sm">May 2024 - July 2024</p>
                   </div>
                 </div>
-                <p className="text-xs">
+                <p className="text-sm">
                   Working at Material Depo, I was responsible for developing and
                   maintaining the frontend of the website.
                 </p>
-                <div className="flex flex-col gap-2 text-xs">
+                <div className="flex flex-col gap-2 text-sm">
                   <div className="flex">
                     <li />
                     <p>
@@ -127,9 +127,9 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="p-4 w-full py-6 flex flex-col gap-4">
+        <div className="p-4 w-full py-8 flex flex-col gap-4">
           <p className="text-3xl font-medium">Projects</p>
-          <div className="flex flex-col gap-12 w-full">
+          <div className="flex justify-between gap-4 w-full">
             <ProjectCard
               title="Sync Code"
               description="Sync Code is a collaborative, real-time code editor where users can seamlessly code together. It provides a platform for multiple users to enter a room, share a unique room ID, and collaborate on code simultaneously. Users can seamlessly edit and download files while communicating through group chat."

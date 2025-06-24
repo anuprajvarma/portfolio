@@ -22,11 +22,11 @@ export default async function Blog({ params }: BlogPageProps) {
   const { content, frontmatter } = post;
 
   return (
-    <div className="w-full flex mt-10 z-10">
-      <div className="sm:w-[55rem] w-full m-auto p-4 flex flex-col gap-6">
-        <div className="flex flex-col">
+    <div className="w-full flex mt-20 z-10">
+      <div className="sm:w-[55rem] w-full m-auto p-4 flex flex-col gap-6 border border-[var(--bg)] rounded-sm">
+        <div className="flex flex-col gap-2">
           <h1 className="text-3xl font-medium">{frontmatter.title}</h1>
-          <div className="flex gap-1 items-center text-xs">
+          <div className="flex gap-1 items-center text-sm">
             <div className="flex gap-2 items-center">
               <MyImage picHeight={30} picWeight={30} />
               <Link

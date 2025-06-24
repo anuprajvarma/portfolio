@@ -7,8 +7,8 @@ import { Posts } from "@/components/posts";
 
 export default async function Page() {
   return (
-    <div className="w-full mt-10">
-      <div className="sm:w-[55rem] w-full m-auto border border-[var(--bg)]">
+    <div className="w-full mt-20">
+      <div className="sm:w-[55rem] w-full m-auto border border-[var(--bg)] rounded-sm">
         <div className="p-4 py-6 w-full flex flex-col gap-8">
           <div className="flex sm:flex-row flex-col-reverse  gap-1 sm:justify-between justify-center items-center w-full">
             <div className="flex flex-col gap-3">
