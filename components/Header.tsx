@@ -9,7 +9,7 @@ const Header = () => {
   console.log(pathname);
   return (
     <header className="w-full">
-      <div className="sm:w-[40rem] w-full m-auto flex justify-between items-center px-2">
+      <div className="sm:w-[55rem] w-full m-auto flex justify-between items-center px-2">
         <nav className={`cursor-pointer w-full flex`}>
           <ul className="flex text-2xl w-full justify-between sm:justify-start flex-row gap-4">
             <li
