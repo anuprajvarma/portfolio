@@ -131,18 +131,18 @@ export default function About() {
           <p className="text-3xl font-medium">Projects</p>
           <div className="flex justify-between gap-4 w-full">
             <ProjectCard
-              title="Sync Code"
-              description="Sync Code is a collaborative, real-time code editor where users can seamlessly code together. It provides a platform for multiple users to enter a room, share a unique room ID, and collaborate on code simultaneously. Users can seamlessly edit and download files while communicating through group chat."
-              githubLink="https://github.com/anuprajvarma/Sync_Code"
-              liveLink="https://sync-code1.herokuapp.com/"
-              imageLink="/synccodeproject.png"
+              title="Cape"
+              description="Cape makes learning from YouTube effortless and distraction-free. Track your progress with daily streaks, take notes using the integrated Notion editor, and get playlist-specific help with a built-in AI chatbot."
+              githubLink="https://github.com/anuprajvarma/cape"
+              liveLink="https://cape-lyart.vercel.app/"
+              imageLink="/course-page.png"
             />
             <ProjectCard
-              title="Movie Hub"
-              description="It is web application where people can search any movie and they can see movies details such as Director name,Genre."
-              githubLink="https://github.com/anuprajvarma/moviehub"
+              title="Stich"
+              description="Stich is a chrome extension, with stich you don't need to switch tabs for using AI you can use this on any site instantly."
+              githubLink="https://github.com/anuprajvarma/stich-chrome-extension"
               liveLink="https://moviehub1.vercel.app/"
-              imageLink="/searchPage.png"
+              imageLink="/image3.png"
             />
           </div>
         </div>
