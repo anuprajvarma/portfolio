@@ -10,7 +10,7 @@ export default async function Blog() {
     <div className="w-full flex">
       <div className="sm:w-[55rem] w-full m-auto p-4 flex flex-col gap-6 border border-[var(--bg)] rounded-sm">
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl">
+          <h2 className="text-2xl font-semibold">
             10 Must-Try Open-Source GitHub Projects to Level Up Your Back-End
             Skills in 2025
           </h2>
@@ -84,9 +84,9 @@ export default async function Blog() {
           let&apos;s explore them.
         </p>
 
-        <ol className="list-decimal p-4">
+        <ol className="list-decimal p-4 flex flex-col gap-4">
           <li>
-            <h3 className="text-xl font-semibold">Supabase</h3>
+            <h3 className="text-xl font-semibold py-2">Supabase</h3>
             <p>
               <strong>GitHub:</strong>{" "}
               <a
@@ -118,7 +118,7 @@ export default async function Blog() {
           </li>
 
           <li>
-            <h3>Strapi</h3>
+            <h3 className="text-xl font-semibold py-2">Strapi</h3>
             <p>
               <strong>GitHub:</strong>{" "}
               <a
@@ -149,7 +149,7 @@ export default async function Blog() {
           </li>
 
           <li>
-            <h3>Appwrite</h3>
+            <h3 className="text-xl font-semibold py-2">Appwrite</h3>
             <p>
               <strong>GitHub:</strong>{" "}
               <a
@@ -180,7 +180,7 @@ export default async function Blog() {
           </li>
 
           <li>
-            <h3>FastAPI</h3>
+            <h3 className="text-xl font-semibold py-2">FastAPI</h3>
             <p>
               <strong>GitHub:</strong>{" "}
               <a
@@ -211,7 +211,7 @@ export default async function Blog() {
           </li>
 
           <li>
-            <h3>NocoBase</h3>
+            <h3 className="text-xl font-semibold py-2">NocoBase</h3>
             <p>
               <strong>GitHub:</strong>{" "}
               <a
@@ -242,7 +242,7 @@ export default async function Blog() {
           </li>
 
           <li>
-            <h3>PocketBase</h3>
+            <h3 className="text-xl font-semibold py-2">PocketBase</h3>
             <p>
               <strong>GitHub:</strong>{" "}
               <a
@@ -273,7 +273,7 @@ export default async function Blog() {
           </li>
 
           <li>
-            <h3>Directus</h3>
+            <h3 className="text-xl font-semibold py-2">Directus</h3>
             <p>
               <strong>GitHub:</strong>{" "}
               <a
@@ -304,7 +304,7 @@ export default async function Blog() {
           </li>
 
           <li>
-            <h3>Parse Server</h3>
+            <h3 className="text-xl font-semibold py-2">Parse Server</h3>
             <p>
               <strong>GitHub:</strong>{" "}
               <a
@@ -335,7 +335,7 @@ export default async function Blog() {
           </li>
 
           <li>
-            <h3>Hasura</h3>
+            <h3 className="text-xl font-semibold py-2">Hasura</h3>
             <p>
               <strong>GitHub:</strong>{" "}
               <a
@@ -366,7 +366,7 @@ export default async function Blog() {
           </li>
 
           <li>
-            <h3>OPAL</h3>
+            <h3 className="text-xl font-semibold py-2">OPAL</h3>
             <p>
               <strong>GitHub:</strong>{" "}
               <a
