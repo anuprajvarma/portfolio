@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import ThemeToggle from "./ThemeToggle";
+// import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const pathname = usePathname();
@@ -33,16 +33,24 @@ const Header = () => {
             >
               <Link href="/blog">Blog</Link>
             </li>
-            <li
+            {/* <li
               className={`hover:bg-[var(--bg)] transition duration-300 rounded-md p-2 ${
                 pathname == "/resume" ? "font-bold" : "font-normal"
               }`}
             >
               <Link href="/resume">Resume</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
-        <ThemeToggle />
+        <Link
+          className={`hover:bg-[var(--bg)] transition duration-300 rounded-md p-2 text-2xl ${
+            pathname == "/resume" ? "font-bold" : "font-normal"
+          }`}
+          href="/resume"
+        >
+          Resume
+        </Link>
+        {/* <ThemeToggle /> */}
       </div>
     </header>
   );

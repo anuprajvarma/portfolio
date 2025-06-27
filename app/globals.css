@@ -8,10 +8,10 @@
 }
 
 :root {
-  --background: #3b4a62;
-  --foreground: #dcdeeb;
-  --bg: #313e55;
-  --border-color: #313e55;
+  --background: #000000;
+  --foreground: #ffffff;
+  --bg: #161616;
+  --border-color: #313131;
 }
 
 [data-theme="dark"] {
