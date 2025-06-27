@@ -1,26 +1,9 @@
 export const Blogs = [
   {
-    title: "Building a Custom Chatbot with Next.js and OpenAI",
+    title:
+      "10 Must-Try Open-Source GitHub Projects to Level Up Your Back-End Skills in 2025",
     description:
-      "Learn how to create a custom chatbot using Next.js and OpenAI's API, enhancing user interaction on your website.",
-    date: "2024-10-01",
-  },
-  {
-    title: "Building a Custom Chatbot with Next.js and OpenAI",
-    description:
-      "Learn how to create a custom chatbot using Next.js and OpenAI's API, enhancing user interaction on your website.",
-    date: "2024-10-01",
-  },
-  {
-    title: "Building a Custom Chatbot with Next.js and OpenAI",
-    description:
-      "Learn how to create a custom chatbot using Next.js and OpenAI's API, enhancing user interaction on your website.",
-    date: "2024-10-01",
-  },
-  {
-    title: "Building a Custom Chatbot with Next.js and OpenAI",
-    description:
-      "Learn how to create a custom chatbot using Next.js and OpenAI's API, enhancing user interaction on your website.",
-    date: "2024-10-01",
+      "Back-end development is the backbone of modern applications, powering everything from APIs to databases. If you're looking to sharpen your…",
+    date: "2025-04-25",
   },
 ];
