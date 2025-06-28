@@ -21,7 +21,7 @@ export default async function Page() {
                   Rick&apos;s experiments—chaotic, unpredictable, yet always
                   groundbreaking.
                 </p>
-                <div className="flex gap-6 cursor-pointer justify-center sm:justify-start">
+                <div className="flex gap-2 cursor-pointer justify-center sm:justify-start">
                   <Linkedin link="https://www.linkedin.com/in/anuprajvarma/" />
                   <Github link="https://github.com/anuprajvarma" />
                   <Twitter link="https://x.com/Anupraj_varma" />

@@ -1,9 +1,9 @@
 import {
   PiGithubLogoThin,
   PiLinkedinLogo,
-  PiTwitterLogoLight,
   PiYoutubeLogoLight,
 } from "react-icons/pi";
+import { RiTwitterXFill } from "react-icons/ri";
 import { CiLink } from "react-icons/ci";
 import Link from "next/link";
 
@@ -38,7 +38,7 @@ export function Twitter({ link }: { link: string }) {
       target="_blank"
       className="hover:bg-[var(--bg)] p-2 rounded-lg transition duration-300"
     >
-      <PiTwitterLogoLight size={25} />
+      <RiTwitterXFill size={25} />
     </Link>
   );
 }
