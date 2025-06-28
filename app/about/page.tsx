@@ -24,103 +24,123 @@ export default function About() {
               <MyImage picHeight={100} picWeight={100} />
             </div>
           </div>
-          <p>
-            When I’m not debugging, you’ll find me exploring emerging
-            technologies, contributing to open source, or strategizing my next
-            ambitious project.
-          </p>{" "}
         </div>
         <div className="p-4 py-6 flex flex-col gap-8">
           <p className="text-4xl font-medium">Experience</p>
           <div className="flex gap-2 w-full">
-            <div className="w-4/12 h-[400px] sm:flex sm:flex-col hidden">
-              <div className="h-[200px]">
+            <div className="w-4/12 h-[500px] sm:flex sm:flex-col hidden">
+              <div className="h-[250px]">
                 <div>
                   <p className="text-3xl font-medium">Kroto</p>
-                  <p className="text-sm">October 2024 - Current</p>
+                  <p className="text-sm"> Dec 2024 – Apr 2025</p>
                 </div>
               </div>
-              <div className="h-[200px]">
+              <div className="h-[250px]">
                 <div>
                   <p className="text-3xl font-medium">Material Depo</p>
-                  <p className="text-sm">May 2024 - July 2024</p>
+                  <p className="text-sm">Aug 2024 – Nov 2024</p>
                 </div>
               </div>
             </div>
-            <div className="h-[400px] relative sm:flex hidden">
-              <div className="flex flex-col h-[220] items-center pt-3">
+            <div className="h-[500px] relative sm:flex hidden">
+              <div className="flex flex-col h-[296] items-center pt-4">
                 <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
                 <div className="w-[2px] h-full bg-white"></div>
               </div>
-              <div className="h-[180] absolute bottom-0">
+              <div className="h-[204] absolute bottom-0">
                 <div className="w-[12px] h-[12px] rounded-full bg-white"></div>
               </div>
             </div>
-            <div className="sm:w-8/12 w-full sm:h-[400px] flex flex-col gap-4 sm:pl-8">
-              <div className="sm:h-[200px] flex flex-col gap-2">
+            <div className="sm:w-8/12 w-full sm:h-[500px] flex flex-col gap-4 sm:pl-8">
+              <div className="sm:h-[300px] flex flex-col gap-2">
                 <div>
                   <p className="text-3xl font-medium">Software Developer</p>
                   <div className="sm:hidden flex flex-col">
                     <p className="text-md font-medium">Kroto</p>
-                    <p className="text-sm">October 2024 - Current</p>
+                    <p className="text-sm"> Dec 2024 – Apr 2025</p>
                   </div>
                 </div>
-                <p className="text-sm">
-                  I collaborated on Next.js & TailwindCSS codebase to add
-                  features, enhance UI and redesign multiple pages.
-                </p>
                 <div className="flex flex-col gap-2 text-sm">
                   <div className="flex">
                     <li />
                     <p className="">
-                      Added ask-query feature on landing page, improving team
-                      communication for 300+ users.
+                      Developed and maintained scalable full-stack features for
+                      an <span className="font-semibold">AI-powered</span>{" "}
+                      course creation platform using Next.js 13+ (App Router),
+                      Redux, Tailwind CSS and TypeScript.
                     </p>
                   </div>
                   <div className="flex">
                     <li />
                     <p className="">
-                      Constructed reusable components, pages, and forms with
-                      streamlined Zod validation integration{" "}
+                      Worked on high-traffic user interfaces with performance
+                      optimisation techniques like{" "}
+                      <span className="font-semibold">code-splitting,</span>
+                      <span className="font-semibold">lazy loading</span>, and
+                      <span className="font-semibold">memoisation,</span>{" "}
+                      reducing Time to Interactive by 25%
                     </p>
                   </div>
                   <div className="flex">
                     <li />
                     <p className="">
-                      Tech Stack- NextJS, Typescript, TailwindCSS, tRPC, Prisma{" "}
+                      Built a robust{" "}
+                      <span className="font-semibold">call booking</span> system
+                      with real-time availability checks,{" "}
+                      <span className="font-semibold">timezone support</span>,
+                      and Prisma-powered scheduling logic between students and
+                      instructors{" "}
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <li />
+                    <p className="">
+                      Tech Stack-{" "}
+                      <span className="font-semibold">
+                        Next.js, TypeScript, Redux, Tailwind CSS, tRPC, Prisma
+                      </span>
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="sm:h-[200px] flex flex-col gap-2">
+              <div className="sm:h-[300px] flex flex-col gap-2">
                 <div>
                   <p className="text-3xl font-medium">Frontend Developer</p>
                   <div className="sm:hidden flex flex-col">
                     <p className="text-md font-medium">Material Depo</p>
-                    <p className="text-sm">May 2024 - July 2024</p>
+                    <p className="text-sm">Aug 2024 – Nov 2024</p>
                   </div>
                 </div>
-                <p className="text-sm">
-                  Working at Material Depo, I was responsible for developing and
-                  maintaining the frontend of the website.
-                </p>
                 <div className="flex flex-col gap-2 text-sm">
                   <div className="flex">
                     <li />
                     <p>
-                      Integrated Mix Panel Analytics tool for various functions,
-                      which highly impacted the product launch analysis
+                      Integrated{" "}
+                      <span className="font-semibold">Mix Panel</span> Analytics
+                      tool for various functions, which highly impacted the
+                      product launch analysis
                     </p>
                   </div>
                   <div className="flex">
                     <li />
                     <p>
-                      Worked on two project on ReactJS and delivered their MVP
+                      Led the implementation of{" "}
+                      <span className="font-semibold">
+                        state management and API integration
+                      </span>{" "}
+                      with robust error handling and TypeScript interfaces,
+                      increasing app reliability by{" "}
+                      <span className="font-semibold">40%</span>
                     </p>
                   </div>
                   <div className="flex">
                     <li />
-                    <p>Tech Stack- ReactJS, Typescript, TailwindCSS</p>
+                    <p>
+                      Tech Stack-{" "}
+                      <span className="font-semibold">
+                        React.js, TypeScript, Redux, Tailwind CSS
+                      </span>
+                    </p>
                   </div>
                 </div>
               </div>

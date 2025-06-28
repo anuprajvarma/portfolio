@@ -8,7 +8,7 @@ const Resume = () => {
           <a
             href="/resume.pdf"
             download="AnuprajVarma-resume.pdf"
-            className="text-lg p-4 rounded-md font-medium hover:bg-[var(--bg)] transition duration-300 text-center w-fit"
+            className="text-lg p-4 rounded-md font-medium bg-[var(--bg)] hover:bg-[var(--border-color)]/70 transition duration-300 text-center w-fit"
           >
             Download Resume
           </a>
