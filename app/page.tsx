@@ -1,7 +1,7 @@
 import { MyImage } from "@/components/MyImage";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Link from "next/link";
-import { Github, Twitter, Linkedin, Youtube } from "@/components/socialLinks";
+import { Github, Twitter, Linkedin } from "@/components/socialLinks";
 import { Posts } from "@/components/posts";
 // import Header from "@/components/Header";
 
@@ -23,9 +23,9 @@ export default async function Page() {
                 </p>
                 <div className="flex gap-2 cursor-pointer justify-center sm:justify-start">
                   <Linkedin link="https://www.linkedin.com/in/anuprajvarma/" />
-                  <Github link="https://github.com/anuprajvarma" />
                   <Twitter link="https://x.com/Anupraj_varma" />
-                  <Youtube link="https://www.youtube.com/@MarkVerma" />
+                  <Github link="https://github.com/anuprajvarma" />
+                  {/* <Youtube link="https://www.youtube.com/@MarkVerma" /> */}
                 </div>
               </div>
             </div>

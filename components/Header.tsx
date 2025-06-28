@@ -33,17 +33,17 @@ const Header = () => {
             >
               <Link href="/blog">Blog</Link>
             </li>
-            {/* <li
-              className={`hover:bg-[var(--bg)] transition duration-300 rounded-md p-2 ${
+            <li
+              className={`hover:bg-[var(--bg)] transition duration-300 rounded-md p-2 text-2xl sm:hidden flex ${
                 pathname == "/resume" ? "font-bold" : "font-normal"
               }`}
             >
               <Link href="/resume">Resume</Link>
-            </li> */}
+            </li>
           </ul>
         </nav>
         <Link
-          className={`hover:bg-[var(--bg)] transition duration-300 rounded-md p-2 text-2xl ${
+          className={`hover:bg-[var(--bg)] transition duration-300 rounded-md p-2 text-2xl sm:flex hidden ${
             pathname == "/resume" ? "font-bold" : "font-normal"
           }`}
           href="/resume"

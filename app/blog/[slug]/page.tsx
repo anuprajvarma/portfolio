@@ -11,8 +11,7 @@ export default async function Blog() {
       <div className="sm:w-[55rem] w-full m-auto p-4 flex flex-col gap-6 border border-[var(--bg)] rounded-sm">
         <div className="flex flex-col gap-4">
           <h2 className="text-2xl font-semibold">
-            10 Must-Try Open-Source GitHub Projects to Level Up Your Back-End
-            Skills in 2025
+            Open-Source GitHub Projects to Level Up Your Back-End Skills
           </h2>
           <div className="flex gap-2 text-sm items-center">
             <Image
