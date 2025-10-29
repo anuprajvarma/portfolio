@@ -32,7 +32,7 @@ export default function About() {
               <div className="h-[250px]">
                 <div>
                   <p className="text-3xl font-medium">Kroto</p>
-                  <p className="text-sm"> Dec 2024 – Apr 2025</p>
+                  <p className="text-sm"> Dec 2024 – May 2025</p>
                 </div>
               </div>
               <div className="h-[250px]">
@@ -54,7 +54,9 @@ export default function About() {
             <div className="sm:w-8/12 w-full sm:h-[500px] flex flex-col gap-4 sm:pl-8">
               <div className="sm:h-[300px] flex flex-col gap-2">
                 <div>
-                  <p className="text-3xl font-medium">Software Developer</p>
+                  <p className="text-3xl font-medium">
+                    Software Developer Intern
+                  </p>
                   <div className="sm:hidden flex flex-col">
                     <p className="text-md font-medium">Kroto</p>
                     <p className="text-sm"> Dec 2024 – Apr 2025</p>
