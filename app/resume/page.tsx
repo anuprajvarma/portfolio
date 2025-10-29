@@ -15,7 +15,7 @@ const Resume = () => {
         </div>
         <div className="sm:h-[40rem] h-[35rem]">
           <iframe
-            src="https://drive.google.com/file/d/1pVIojU_VNk7zGARarRsN63oL_bHwU5Ck/preview"
+            src="https://drive.google.com/file/d/1cQQuzZYq-soiIeQJxGoUfayBXZBegMq-/preview"
             allow="autoplay"
             className="w-full h-full p-4"
           ></iframe>
